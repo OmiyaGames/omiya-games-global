@@ -1,8 +1,5 @@
 {
-    "name": "OmiyaGames.Template.Tests",
-    "references": [
-        "OmiyaGames.Template"
-    ],
+    "name": "OmiyaGames.Global",
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -10,8 +7,5 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
-    "optionalUnityReferences": [
-        "TestAssemblies"
-    ]
+    "versionDefines": []
 }

@@ -1,5 +1,9 @@
 {
     "name": "OmiyaGames.Global",
+    "references": [
+        "OmiyaGames",
+        "OmiyaGames.Web"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -7,5 +11,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

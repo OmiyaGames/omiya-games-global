@@ -3,6 +3,7 @@
 namespace OmiyaGames.Global
 {
     ///-----------------------------------------------------------------------
+    /// <remarks>
     /// <copyright file="ISingletonScript.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
@@ -26,8 +27,29 @@ namespace OmiyaGames.Global
     /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     /// THE SOFTWARE.
     /// </copyright>
-    /// <author>Taro Omiya</author>
-    /// <date>5/18/2015</date>
+    /// <list type="table">
+    /// <listheader>
+    /// <term>Revision</term>
+    /// <description>Description</description>
+    /// </listheader>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
+    /// <strong>Date:</strong> 5/18/2015<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Initial verison.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.1.0-preview.1<br/>
+    /// <strong>Date:</strong> 5/18/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Converting code to package.</description>
+    /// </item>
+    /// </list>
+    /// </remarks>
     ///-----------------------------------------------------------------------
     /// <summary>
     /// An abstract class with functions that are called on certain
@@ -36,13 +58,23 @@ namespace OmiyaGames.Global
     /// <seealso cref="Singleton"/>
     public abstract class ISingletonScript : MonoBehaviour
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <value></value>
         public bool IsPartOfSingleton
         {
             get;
             internal set;
         } = false;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public abstract void SingletonAwake();
+        /// <summary>
+        /// 
+        /// </summary>
         public abstract void SceneAwake();
     }
 }

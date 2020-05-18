@@ -6,6 +6,7 @@ using OmiyaGames.Web;
 namespace OmiyaGames.Global
 {
     ///-----------------------------------------------------------------------
+    /// <remarks>
     /// <copyright file="Singleton.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
@@ -29,8 +30,29 @@ namespace OmiyaGames.Global
     /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     /// THE SOFTWARE.
     /// </copyright>
-    /// <author>Taro Omiya</author>
-    /// <date>9/22/2016</date>
+    /// <list type="table">
+    /// <listheader>
+    /// <term>Revision</term>
+    /// <description>Description</description>
+    /// </listheader>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
+    /// <strong>Date:</strong> 9/22/2016<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Initial verison.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.1.0-preview.1<br/>
+    /// <strong>Date:</strong> 5/18/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Converting code to package.</description>
+    /// </item>
+    /// </list>
+    /// </remarks>
     ///-----------------------------------------------------------------------
     /// <summary>
     /// Any GameObject with this script will not be destroyed when switching between
@@ -40,6 +62,9 @@ namespace OmiyaGames.Global
     /// <seealso cref="ISingletonScript"/>
     public class Singleton : MonoBehaviour
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public enum GenuineStatus
         {
             Unchecked = -1,
@@ -50,24 +75,57 @@ namespace OmiyaGames.Global
 
         readonly Dictionary<Type, Component> mCacheRetrievedComponent = new Dictionary<Type, Component>();
 
+        /// <summary>
+        /// 
+        /// </summary>
         public event Action<float> OnUpdate;
+        /// <summary>
+        /// 
+        /// </summary>
         public event Action<float> OnRealTimeUpdate;
+        /// <summary>
+        /// 
+        /// </summary>
         public event Action<float> OnLateUpdate;
+        /// <summary>
+        /// 
+        /// </summary>
         public event Action<float> OnLateRealTimeUpdate;
+        /// <summary>
+        /// 
+        /// </summary>
         public event Action<float> OnFixedUpdate;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public delegate void FocusChanged(bool before, bool after);
+        /// <summary>
+        /// 
+        /// </summary>
         public event FocusChanged OnBeforeFocusChange;
+        /// <summary>
+        /// 
+        /// </summary>
         public event Action<bool> OnAfterFocusChange;
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Header("Simulation")]
         [SerializeField]
         bool simulateMalformedGame = false;
 #if UNITY_EDITOR
+        /// <summary>
+        /// 
+        /// </summary>
         [SerializeField]
         bool simulateWebplayer = false;
 #endif
 
+        /// <summary>
+        /// 
+        /// </summary>
         [Header("Store Information")]
         [SerializeField]
         PlatformSpecificLink storeUrls;
@@ -94,6 +152,9 @@ namespace OmiyaGames.Global
             private set;
         } = true;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static COMPONENT Get<COMPONENT>() where COMPONENT : Component
         {
             COMPONENT returnObject = null;
@@ -141,6 +202,9 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsSimulatingMalformedGame
         {
             get
@@ -160,6 +224,9 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PlatformSpecificStoreLink
         {
             get
@@ -168,6 +235,9 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string PlatformSpecificStoreLinkShortened
         {
             get
@@ -176,6 +246,9 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string WebsiteLink
         {
             get
@@ -184,6 +257,9 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string WebsiteLinkShortened
         {
             get
@@ -192,11 +268,17 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public string GetStoreLink(PlatformSpecificLink.SupportedPlatforms platform)
         {
             return storeUrls.GetPlatformLink(platform);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public GenuineStatus CheckGenuine
         {
             get
@@ -222,6 +304,9 @@ namespace OmiyaGames.Global
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsPiracyDetected
         {
             get

@@ -7,7 +7,7 @@ namespace OmiyaGames.Global
     /// <copyright file="ISingletonScript.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
-    /// Copyright (c) 2014-2018 Omiya Games
+    /// Copyright (c) 2014-2020 Omiya Games
     /// 
     /// Permission is hereby granted, free of charge, to any person obtaining a copy
     /// of this software and associated documentation files (the "Software"), to deal
@@ -59,9 +59,10 @@ namespace OmiyaGames.Global
     public abstract class ISingletonScript : MonoBehaviour
     {
         /// <summary>
-        /// 
+        /// Indicates whether this instance can retrievable from <see cref="Singleton"/> or not.
         /// </summary>
-        /// <value></value>
+        /// <value>Set to true if this script is attached to a <see cref="GameObject"/> on or a child of <see cref="Singleton"/></value>
+        /// <seealso cref="Singleton"/>
         public bool IsPartOfSingleton
         {
             get;
@@ -69,11 +70,12 @@ namespace OmiyaGames.Global
         } = false;
 
         /// <summary>
-        /// 
+        /// Runs when the <see cref="Singleton.Instance"/> calls Awake().
         /// </summary>
         public abstract void SingletonAwake();
         /// <summary>
-        /// 
+        /// Runs when, after a scene transition, Awake() is called.
+        /// This method is called directly after <see cref="SingletonAwake"/> as well.
         /// </summary>
         public abstract void SceneAwake();
     }

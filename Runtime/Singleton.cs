@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using OmiyaGames.Web;
+using UnityEngine.Serialization;
 
 namespace OmiyaGames.Global
 {
@@ -63,75 +64,113 @@ namespace OmiyaGames.Global
     public class Singleton : MonoBehaviour
     {
         /// <summary>
-        /// 
+        /// Status of this build, based on <see cref="Application.genuine"/> and <see cref="Application.genuineCheckAvailable"/>.
         /// </summary>
-        public enum GenuineStatus
+        /// <seealso cref="Application.genuine"/>
+        /// <seealso cref="Application.genuineCheckAvailable"/>.
+        public enum GenuineStatus : short
         {
+            /// <summary>
+            /// Verification for whether this build is genuine or not has been executed yet.
+            /// </summary>
             Unchecked = -1,
+            /// <summary>
+            /// According to Unity, build is genuine.
+            /// Same as <see cref="Application.genuine"/> returning true.
+            /// </summary>
             IsGenuine = 0,
+            /// <summary>
+            /// According to Unity, build is <em>not</em> genuine.
+            /// Same as <see cref="Application.genuine"/> returning false.
+            /// </summary>
             NotGenuine,
+            /// <summary>
+            /// Unity has no ability to confim whether this build is genuine or not.
+            /// Same as <see cref="Application.genuineCheckAvailable"/> returning false.
+            /// </summary>
             VerificationNotSupported
         }
 
-        readonly Dictionary<Type, Component> mCacheRetrievedComponent = new Dictionary<Type, Component>();
+        /// <summary>
+        /// A cache of child components attached to this Singleton.
+        /// </summary>
+        /// <seealso cref="Get{COMPONENT}"/>
+        private readonly Dictionary<Type, Component> mCacheRetrievedComponent = new Dictionary<Type, Component>();
 
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnUpdate().
+        /// May slightly improve performance than simply defining the method.
+        /// Argument is <see cref="Time.deltaTime"/>.
         /// </summary>
         public event Action<float> OnUpdate;
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnUpdate().
+        /// May slightly improve performance than simply defining the method.
+        /// Argument is <see cref="Time.unscaledDeltaTime"/>.
         /// </summary>
         public event Action<float> OnRealTimeUpdate;
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnLateUpdate().
+        /// May slightly improve performance than simply defining the method.
+        /// Argument is <see cref="Time.deltaTime"/>.
         /// </summary>
         public event Action<float> OnLateUpdate;
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnLateUpdate().
+        /// May slightly improve performance than simply defining the method.
+        /// Argument is <see cref="Time.unscaledDeltaTime"/>.
         /// </summary>
         public event Action<float> OnLateRealTimeUpdate;
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnFixedUpdate().
+        /// May slightly improve performance than simply defining the method.
+        /// Argument is <see cref="Time.deltaTime"/>.
         /// </summary>
         public event Action<float> OnFixedUpdate;
 
         /// <summary>
-        /// 
+        /// Indicates how <see cref="IsAppFocused"/> changes.
         /// </summary>
         public delegate void FocusChanged(bool before, bool after);
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnApplicationFocus(bool),
+        /// and before <see cref="IsAppFocused"/> changes.
         /// </summary>
         public event FocusChanged OnBeforeFocusChange;
         /// <summary>
-        /// 
+        /// Called on Unity's event, OnApplicationFocus(bool),
+        /// and after <see cref="IsAppFocused"/> changes.
         /// </summary>
         public event Action<bool> OnAfterFocusChange;
 
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         /// <summary>
-        /// 
+        /// Makes <see cref="OmiyaGames"/>.* tools and libraries to pretend this
+        /// is not a genuine build of the game.
         /// </summary>
         [Header("Simulation")]
         [SerializeField]
-        bool simulateMalformedGame = false;
+        private bool simulateMalformedGame = false;
+#endif
 #if UNITY_EDITOR
         /// <summary>
-        /// 
+        /// Makes <see cref="OmiyaGames"/>.* tools and libraries to pretend this
+        /// is a WebGL build.
         /// </summary>
         [SerializeField]
-        bool simulateWebplayer = false;
+        [FormerlySerializedAs("simulateWebplayer")]
+        private bool simulateWebGl = false;
 #endif
 
         /// <summary>
-        /// 
+        /// Links to this game's listing on various stores
         /// </summary>
         [Header("Store Information")]
         [SerializeField]
-        PlatformSpecificLink storeUrls;
+        private PlatformSpecificLink storeUrls;
 
-        ISingletonScript[] allSingletonScriptsCache = null;
-        GenuineStatus genuineStatus = GenuineStatus.Unchecked;
+        private ISingletonScript[] allSingletonScriptsCache = null;
+        private GenuineStatus genuineStatus = GenuineStatus.Unchecked;
 
         /// <summary>
         /// The static instance of this object.  Use this property to access it's information
@@ -153,8 +192,12 @@ namespace OmiyaGames.Global
         } = true;
 
         /// <summary>
-        /// 
+        /// Retrieves a <see cref="Component"/> under <see cref="Singleton"/>'s <see cref="GameObject"/>,
+        /// or its children.
         /// </summary>
+        /// <remarks>
+        /// For efficiency, <see cref="Component"/>s retrieved from prior calls are cached.
+        /// </remarks>
         public static COMPONENT Get<COMPONENT>() where COMPONENT : Component
         {
             COMPONENT returnObject = null;
@@ -171,7 +214,7 @@ namespace OmiyaGames.Global
                 {
                     // Attempt to grab a component from children
                     returnObject = Instance.GetComponentInChildren<COMPONENT>();
-                    if(returnObject != null)
+                    if (returnObject != null)
                     {
                         // If return object is not null, cache it
                         Instance.mCacheRetrievedComponent.Add(retrieveType, returnObject);
@@ -182,7 +225,7 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// Property indicating if this is a web app or not.
+        /// Indicates if this build is a web app or not.
         /// Basically checks if this is a WebGL build.
         /// </summary>
         public bool IsWebApp
@@ -191,9 +234,9 @@ namespace OmiyaGames.Global
             {
 #if UNITY_EDITOR
                 // Check if webplayer simulation checkbox is checked
-                return simulateWebplayer;
+                return simulateWebGl;
 #elif UNITY_WEBGL
-                // Always return true if already on a webplayer
+                // Always return true if WebGL build
                 return true;
 #else
                 // Always return false, otherwise
@@ -203,29 +246,24 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// 
+        /// Indicates whether the developer wants to pretend this build is not genuine.
         /// </summary>
         public bool IsSimulatingMalformedGame
         {
             get
             {
-                bool returnFlag = simulateMalformedGame;
-
-                // Check if we're not in the editor, and this build is in debug mode
-#if !UNITY_EDITOR
-                if (Debug.isDebugBuild == false)
-                {
-                    // Always return false
-                    returnFlag = false;
-                }
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+                // If in editor or debug mode, return member variable.
+                return simulateMalformedGame;
+#else
+                // Otherwise, always return false
+                return false;
 #endif
-                // Check if simulation checkbox is checked
-                return returnFlag;
             }
         }
 
         /// <summary>
-        /// 
+        /// Gets the listing of this game on a store most relevant to this build's platform.
         /// </summary>
         public string PlatformSpecificStoreLink
         {
@@ -236,8 +274,10 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// 
+        /// Gets the slightly shortened listing of this game on a store most relevant to this build's platform.
         /// </summary>
+        /// <seealso cref="PlatformSpecificStoreLink"/>
+        /// <seealso cref="Helpers.ShortenUrl(string)"/>
         public string PlatformSpecificStoreLinkShortened
         {
             get
@@ -247,7 +287,7 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// 
+        /// Gets the link to this game's website.
         /// </summary>
         public string WebsiteLink
         {
@@ -258,8 +298,10 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// 
+        /// Gets the link to this game's website, shortened.
         /// </summary>
+        /// <seealso cref="WebsiteLink"/>
+        /// <seealso cref="Helpers.ShortenUrl(string)"/>
         public string WebsiteLinkShortened
         {
             get
@@ -269,7 +311,7 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// 
+        /// Gets the listing of this game on a store most relevant to <paramref name="platform"/>.
         /// </summary>
         public string GetStoreLink(PlatformSpecificLink.SupportedPlatforms platform)
         {
@@ -277,8 +319,10 @@ namespace OmiyaGames.Global
         }
 
         /// <summary>
-        /// 
+        /// Gets whether this build is genuine or not, through Unity's methods.
         /// </summary>
+        /// <seealso cref="Application.genuine"/>
+        /// <seealso cref="Application.genuineCheckAvailable"/>
         public GenuineStatus CheckGenuine
         {
             get
@@ -301,17 +345,6 @@ namespace OmiyaGames.Global
                     }
                 }
                 return genuineStatus;
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public bool IsPiracyDetected
-        {
-            get
-            {
-                return (CheckGenuine == GenuineStatus.NotGenuine);
             }
         }
 
@@ -354,7 +387,7 @@ namespace OmiyaGames.Global
 
         void FixedUpdate()
         {
-            OnFixedUpdate?.Invoke(Time.fixedDeltaTime); 
+            OnFixedUpdate?.Invoke(Time.fixedDeltaTime);
         }
 
         void OnApplicationFocus(bool focus)
@@ -366,25 +399,24 @@ namespace OmiyaGames.Global
 
         void RunSingletonEvents()
         {
-            int index = 0;
-            if(allSingletonScriptsCache == null)
+            if (allSingletonScriptsCache == null)
             {
                 // Cache all the singleton scripts
                 allSingletonScriptsCache = Instance.GetComponentsInChildren<ISingletonScript>();
 
                 // Go through every ISingletonScript, and run singleton awake
-                for (index = 0; index < allSingletonScriptsCache.Length; ++index)
+                foreach (ISingletonScript script in allSingletonScriptsCache)
                 {
                     // Run singleton awake
-                    allSingletonScriptsCache[index].IsPartOfSingleton = true;
-                    allSingletonScriptsCache[index].SingletonAwake();
+                    script.IsPartOfSingleton = true;
+                    script.SingletonAwake();
                 }
             }
 
             // Go through every ISingletonScript, and run scene awake
-            for (index = 0; index < allSingletonScriptsCache.Length; ++index)
+            foreach (ISingletonScript script in allSingletonScriptsCache)
             {
-                allSingletonScriptsCache[index].SceneAwake();
+                script.SceneAwake();
             }
         }
     }

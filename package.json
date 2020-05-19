@@ -22,7 +22,9 @@
     "Omiya Games",
     "Scripts",
     "Template",
-    "Library"
+    "Library",
+    "Tool",
+    "Global"
   ],
   "scopedRegistries": [
     {

@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Singleton
+   | Global documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Singleton
+   | Global documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Global.Singleton">
+  
+  
+  <h1 id="OmiyaGames_Global_Singleton" data-uid="OmiyaGames.Global.Singleton" class="text-break">Class Singleton
+  </h1>
+  <div class="markdown level0 summary"><p>Any GameObject with this script will not be destroyed when switching between
+scenes. However, only one instance of this script may exist in a scene.
+Allows retrieving any components in itself or its children.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Singleton</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Global.html">OmiyaGames.Global</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_Global_Singleton_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Singleton : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="OmiyaGames_Global_Singleton_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><copyright file="Singleton.cs" company="Omiya Games">
+The MIT License (MIT)<p>
+<p>Copyright (c) 2014-2018 Omiya Games</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</copyright>
+<table><thead><tr><th>Revision</th><th>Description</th></tr></thead><tbody><tr><td>
+<strong>Version:</strong> 0.0.0-preview.1<br>
+<strong>Date:</strong> 9/22/2016<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Initial verison.</td></tr><tr><td>
+<strong>Version:</strong> 0.1.0-preview.1<br>
+<strong>Date:</strong> 5/18/2020<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Converting code to package.</td></tr></tbody></table></p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_CheckGenuine_" data-uid="OmiyaGames.Global.Singleton.CheckGenuine*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_CheckGenuine" data-uid="OmiyaGames.Global.Singleton.CheckGenuine">CheckGenuine</h4>
+  <div class="markdown level1 summary"><p>Gets whether this build is genuine or not, through Unity&apos;s methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Singleton.GenuineStatus CheckGenuine { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Global.Singleton.GenuineStatus.html">Singleton.GenuineStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_Instance_" data-uid="OmiyaGames.Global.Singleton.Instance*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_Instance" data-uid="OmiyaGames.Global.Singleton.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>The static instance of this object.  Use this property to access it&apos;s information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Singleton Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Global.Singleton.html">Singleton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_IsAppFocused_" data-uid="OmiyaGames.Global.Singleton.IsAppFocused*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_IsAppFocused" data-uid="OmiyaGames.Global.Singleton.IsAppFocused">IsAppFocused</h4>
+  <div class="markdown level1 summary"><p>State indicating whether this app is focused (e.g. on WebGL,
+the app is capturing the mouse input properly) on this app or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAppFocused { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_IsSimulatingMalformedGame_" data-uid="OmiyaGames.Global.Singleton.IsSimulatingMalformedGame*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_IsSimulatingMalformedGame" data-uid="OmiyaGames.Global.Singleton.IsSimulatingMalformedGame">IsSimulatingMalformedGame</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the developer wants to pretend this build is not genuine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSimulatingMalformedGame { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_IsWebApp_" data-uid="OmiyaGames.Global.Singleton.IsWebApp*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_IsWebApp" data-uid="OmiyaGames.Global.Singleton.IsWebApp">IsWebApp</h4>
+  <div class="markdown level1 summary"><p>Indicates if this build is a web app or not.
+Basically checks if this is a WebGL build.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWebApp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_PlatformSpecificStoreLink_" data-uid="OmiyaGames.Global.Singleton.PlatformSpecificStoreLink*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_PlatformSpecificStoreLink" data-uid="OmiyaGames.Global.Singleton.PlatformSpecificStoreLink">PlatformSpecificStoreLink</h4>
+  <div class="markdown level1 summary"><p>Gets the listing of this game on a store most relevant to this build&apos;s platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlatformSpecificStoreLink { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_PlatformSpecificStoreLinkShortened_" data-uid="OmiyaGames.Global.Singleton.PlatformSpecificStoreLinkShortened*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_PlatformSpecificStoreLinkShortened" data-uid="OmiyaGames.Global.Singleton.PlatformSpecificStoreLinkShortened">PlatformSpecificStoreLinkShortened</h4>
+  <div class="markdown level1 summary"><p>Gets the slightly shortened listing of this game on a store most relevant to this build&apos;s platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlatformSpecificStoreLinkShortened { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OmiyaGames_Global_Singleton_PlatformSpecificStoreLinkShortened_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OmiyaGames.Global.Singleton.html#OmiyaGames_Global_Singleton_PlatformSpecificStoreLink">PlatformSpecificStoreLink</a></div>
+  </div>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_WebsiteLink_" data-uid="OmiyaGames.Global.Singleton.WebsiteLink*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_WebsiteLink" data-uid="OmiyaGames.Global.Singleton.WebsiteLink">WebsiteLink</h4>
+  <div class="markdown level1 summary"><p>Gets the link to this game&apos;s website.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebsiteLink { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_WebsiteLinkShortened_" data-uid="OmiyaGames.Global.Singleton.WebsiteLinkShortened*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_WebsiteLinkShortened" data-uid="OmiyaGames.Global.Singleton.WebsiteLinkShortened">WebsiteLinkShortened</h4>
+  <div class="markdown level1 summary"><p>Gets the link to this game&apos;s website, shortened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebsiteLinkShortened { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OmiyaGames_Global_Singleton_WebsiteLinkShortened_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OmiyaGames.Global.Singleton.html#OmiyaGames_Global_Singleton_WebsiteLink">WebsiteLink</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_Get_" data-uid="OmiyaGames.Global.Singleton.Get*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_Get__1" data-uid="OmiyaGames.Global.Singleton.Get``1">Get&lt;COMPONENT&gt;()</h4>
+  <div class="markdown level1 summary"><p>Retrieves a <see cref="!:Component"></see> under <a class="xref" href="OmiyaGames.Global.Singleton.html">Singleton</a>&apos;s <see cref="!:GameObject"></see>,
+or its children.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static COMPONENT Get&lt;COMPONENT&gt;()
+    where COMPONENT : Component</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">COMPONENT</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">COMPONENT</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OmiyaGames_Global_Singleton_Get__1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For efficiency, <see cref="!:Component"></see>s retrieved from prior calls are cached.</p>
+</div>
+  
+  
+  <a id="OmiyaGames_Global_Singleton_GetStoreLink_" data-uid="OmiyaGames.Global.Singleton.GetStoreLink*"></a>
+  <h4 id="OmiyaGames_Global_Singleton_GetStoreLink_PlatformSpecificLink_SupportedPlatforms_" data-uid="OmiyaGames.Global.Singleton.GetStoreLink(PlatformSpecificLink.SupportedPlatforms)">GetStoreLink(PlatformSpecificLink.SupportedPlatforms)</h4>
+  <div class="markdown level1 summary"><p>Gets the listing of this game on a store most relevant to <code data-dev-comment-type="paramref" class="paramref">platform</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetStoreLink(PlatformSpecificLink.SupportedPlatforms platform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlatformSpecificLink.SupportedPlatforms</span></td>
+        <td><span class="parametername">platform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnAfterFocusChange" data-uid="OmiyaGames.Global.Singleton.OnAfterFocusChange">OnAfterFocusChange</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnApplicationFocus(bool),
+and after <a class="xref" href="OmiyaGames.Global.Singleton.html#OmiyaGames_Global_Singleton_IsAppFocused">IsAppFocused</a> changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; OnAfterFocusChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnBeforeFocusChange" data-uid="OmiyaGames.Global.Singleton.OnBeforeFocusChange">OnBeforeFocusChange</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnApplicationFocus(bool),
+and before <a class="xref" href="OmiyaGames.Global.Singleton.html#OmiyaGames_Global_Singleton_IsAppFocused">IsAppFocused</a> changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Singleton.FocusChanged OnBeforeFocusChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Global.Singleton.FocusChanged.html">Singleton.FocusChanged</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnFixedUpdate" data-uid="OmiyaGames.Global.Singleton.OnFixedUpdate">OnFixedUpdate</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnFixedUpdate().
+May slightly improve performance than simply defining the method.
+Argument is <see cref="!:Time.deltaTime"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnFixedUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnLateRealTimeUpdate" data-uid="OmiyaGames.Global.Singleton.OnLateRealTimeUpdate">OnLateRealTimeUpdate</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnLateUpdate().
+May slightly improve performance than simply defining the method.
+Argument is <see cref="!:Time.unscaledDeltaTime"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnLateRealTimeUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnLateUpdate" data-uid="OmiyaGames.Global.Singleton.OnLateUpdate">OnLateUpdate</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnLateUpdate().
+May slightly improve performance than simply defining the method.
+Argument is <see cref="!:Time.deltaTime"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnLateUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnRealTimeUpdate" data-uid="OmiyaGames.Global.Singleton.OnRealTimeUpdate">OnRealTimeUpdate</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnUpdate().
+May slightly improve performance than simply defining the method.
+Argument is <see cref="!:Time.unscaledDeltaTime"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnRealTimeUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Global_Singleton_OnUpdate" data-uid="OmiyaGames.Global.Singleton.OnUpdate">OnUpdate</h4>
+  <div class="markdown level1 summary"><p>Called on Unity&apos;s event, OnUpdate().
+May slightly improve performance than simply defining the method.
+Argument is <see cref="!:Time.deltaTime"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OmiyaGames.Global.ISingletonScript.html">ISingletonScript</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

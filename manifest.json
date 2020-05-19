@@ -24,11 +24,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OmiyaGames.Template.Editor.EditorExample.yml",
+      "source_relative_path": "api/OmiyaGames.Global.ISingletonScript.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OmiyaGames.Template.Editor.EditorExample.html",
-          "hash": "g25t21SfqsbQ3ZGbVsFRgw=="
+          "relative_path": "api/OmiyaGames.Global.ISingletonScript.html",
+          "hash": "lAqeJPXHZ6XACNrpvE+Lhw=="
         }
       },
       "is_incremental": false,
@@ -36,11 +36,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OmiyaGames.Template.Editor.yml",
+      "source_relative_path": "api/OmiyaGames.Global.Singleton.FocusChanged.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OmiyaGames.Template.Editor.html",
-          "hash": "rJBbLty06HJny29FItyByQ=="
+          "relative_path": "api/OmiyaGames.Global.Singleton.FocusChanged.html",
+          "hash": "HkkPw+2vP6ZrZ4eLsz8xhg=="
         }
       },
       "is_incremental": false,
@@ -48,11 +48,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OmiyaGames.Template.RuntimeExample.yml",
+      "source_relative_path": "api/OmiyaGames.Global.Singleton.GenuineStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OmiyaGames.Template.RuntimeExample.html",
-          "hash": "WUDWaKg+fwApRI6SMdG+aA=="
+          "relative_path": "api/OmiyaGames.Global.Singleton.GenuineStatus.html",
+          "hash": "YDAJQhwksT8Z7OZQsFTBoQ=="
         }
       },
       "is_incremental": false,
@@ -60,11 +60,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OmiyaGames.Template.yml",
+      "source_relative_path": "api/OmiyaGames.Global.Singleton.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OmiyaGames.Template.html",
-          "hash": "q/DOngrdZmcKXzJY9KoJUA=="
+          "relative_path": "api/OmiyaGames.Global.Singleton.html",
+          "hash": "/Ki87qqvS1tSngv3xPFe+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.html",
+          "hash": "XtJoJ5KTLPwWMPk7OyY7ZQ=="
         }
       },
       "is_incremental": false,
@@ -76,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lKb4la6HzTfGBNJe1oJk/w=="
+          "hash": "HjcrfH8O8Co73X2FWdIzmw=="
         }
       },
       "is_incremental": false,
@@ -88,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "zFMShut2welebsusiaGAnQ=="
+          "hash": "tJu1h/Caw1EkflA3aTxGhQ=="
         }
       },
       "is_incremental": false,
@@ -112,58 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/changelog.html",
-          "hash": "NHMClbYBoZ6spsDqk29E2Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/customizeDocumentation.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/customizeDocumentation.html",
-          "hash": "305u/qI4Ozt50pgavtPjPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "manual/customizePackage.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/customizePackage.html",
-          "hash": "bPyVF5pGXmwQeZT4tLcMcg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/customizeSamples.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/customizeSamples.html",
-          "hash": "U7qt4XCZ7I0pViJy2XpSrQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/customizeSource.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/customizeSource.html",
-          "hash": "t6FBsAVhhiXVkUIDrScqLg=="
+          "hash": "A0fBzBBS5U4mDiIlVmofEw=="
         }
       },
       "is_incremental": false,
@@ -175,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "Sp9dtUt2o6Dyzo8VzsAfpw=="
+          "hash": "rHik6BFDrIBb6sneVOS/BA=="
         }
       },
       "is_incremental": false,
@@ -193,56 +154,12 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "resources/addingSecrets.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/addingSecrets.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/personalAccessToken.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/personalAccessToken.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/preview.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/preview.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/samples.png",
-      "output": {
-        "resource": {
-          "relative_path": "resources/samples.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "/Rk9CPSAIPHG5ob2/sm/FA=="
+          "hash": "/hm+ntM53K9cNFTw+qFAxg=="
         }
       },
       "is_incremental": false,
@@ -263,13 +180,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

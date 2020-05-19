@@ -1,7 +1,7 @@
 {
-    "name": "OmiyaGames.Template.Editor",
+    "name": "OmiyaGames.Global.Editor",
     "references": [
-        "OmiyaGames.Template"
+        "OmiyaGames.Global"
     ],
     "includePlatforms": [
         "Editor"

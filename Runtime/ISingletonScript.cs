@@ -1,17 +1,13 @@
-using UnityEngine;
-using UnityEngine.TestTools;
-using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
+﻿using UnityEngine;
 
-namespace OmiyaGames.Template.Tests
+namespace OmiyaGames.Global
 {
     ///-----------------------------------------------------------------------
     /// <remarks>
-    /// <copyright file="TestRuntimeExample.cs" company="Omiya Games">
+    /// <copyright file="ISingletonScript.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
-    /// Copyright (c) 2019-2020 Omiya Games
+    /// Copyright (c) 2014-2020 Omiya Games
     /// 
     /// Permission is hereby granted, free of charge, to any person obtaining a copy
     /// of this software and associated documentation files (the "Software"), to deal
@@ -38,58 +34,49 @@ namespace OmiyaGames.Template.Tests
     /// </listheader>
     /// <item>
     /// <term>
-    /// <strong>Version:</strong> 1.0.0<br/>
-    /// <strong>Date:</strong> 12/31/2019<br/>
+    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
+    /// <strong>Date:</strong> 5/18/2015<br/>
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
     /// <description>Initial verison.</description>
     /// </item>
     /// <item>
     /// <term>
-    /// <strong>Version:</strong> 1.2.0<br/>
-    /// <strong>Date:</strong> 4/5/2020<br/>
+    /// <strong>Version:</strong> 0.1.0-preview.1<br/>
+    /// <strong>Date:</strong> 5/18/2020<br/>
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
-    /// <description>Updated with proper example.</description>
-    /// </item>
-    /// <item>
-    /// <term>
-    /// <strong>Version:</strong> 1.3.0<br/>
-    /// <strong>Date:</strong> 5/7/2019<br/>
-    /// <strong>Author:</strong> Taro Omiya
-    /// </term>
-    /// <description>Updated documentation to support DocFX.</description>
+    /// <description>Converting code to package.</description>
     /// </item>
     /// </list>
     /// </remarks>
     ///-----------------------------------------------------------------------
     /// <summary>
-    /// This is an example script for testing a package's runtime script.
+    /// An abstract class with functions that are called on certain
+    /// <code>Singleton</code>'s events.
     /// </summary>
-    /// <seealso cref="RuntimeExample"/>
-    /// <seealso cref="Editor.EditorExample"/>
-    public class TestRuntimeExample
+    /// <seealso cref="Singleton"/>
+    public abstract class ISingletonScript : MonoBehaviour
     {
         /// <summary>
-        /// A Test behaves as an ordinary method
+        /// Indicates whether this instance can retrievable from <see cref="Singleton"/> or not.
         /// </summary>
-        [Test]
-        public void TestRuntimeExampleSimplePasses()
+        /// <value>Set to true if this script is attached to a <see cref="GameObject"/> on or a child of <see cref="Singleton"/></value>
+        /// <seealso cref="Singleton"/>
+        public bool IsPartOfSingleton
         {
-            // Use the Assert class to test conditions
-        }
+            get;
+            internal set;
+        } = false;
 
         /// <summary>
-        /// A UnityTest behaves like a coroutine in Play Mode.
-        /// In Edit Mode you can use the following line to skip a frame:
-        /// <code>yield return null;</code>
+        /// Runs when the <see cref="Singleton.Instance"/> calls Awake().
         /// </summary>
-        [UnityTest]
-        public IEnumerator TestRuntimeExampleEnumeratorPasses()
-        {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
-        }
+        public abstract void SingletonAwake();
+        /// <summary>
+        /// Runs when, after a scene transition, Awake() is called.
+        /// This method is called directly after <see cref="SingletonAwake"/> as well.
+        /// </summary>
+        public abstract void SceneAwake();
     }
 }

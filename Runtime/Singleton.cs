@@ -59,8 +59,8 @@ namespace OmiyaGames.Global
     /// Any GameObject with this script will not be destroyed when switching between
     /// scenes. However, only one instance of this script may exist in a scene.
     /// Allows retrieving any components in itself or its children.
-    /// </summary>
     /// <seealso cref="ISingletonScript"/>
+    /// </summary>
     public class Singleton : MonoBehaviour
     {
         /// <summary>

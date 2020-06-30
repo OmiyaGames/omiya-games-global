@@ -11,7 +11,7 @@ namespace OmiyaGames.Global
     /// <copyright file="Singleton.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
-    /// Copyright (c) 2014-2018 Omiya Games
+    /// Copyright (c) 2014-2020 Omiya Games
     /// 
     /// Permission is hereby granted, free of charge, to any person obtaining a copy
     /// of this software and associated documentation files (the "Software"), to deal
@@ -38,19 +38,26 @@ namespace OmiyaGames.Global
     /// </listheader>
     /// <item>
     /// <term>
-    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
     /// <strong>Date:</strong> 9/22/2016<br/>
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
     /// <description>Initial verison.</description>
-    /// </item>
-    /// <item>
+    /// </item> <item>
     /// <term>
     /// <strong>Version:</strong> 0.1.0-preview.1<br/>
     /// <strong>Date:</strong> 5/18/2020<br/>
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
     /// <description>Converting code to package.</description>
+    /// </item> <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.1.1-preview.1<br/>
+    /// <strong>Date:</strong> 6/29/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>
+    /// Updating code to compile with the latest version of Common and Web package.
+    /// </description>
     /// </item>
     /// </list>
     /// </remarks>
@@ -59,8 +66,8 @@ namespace OmiyaGames.Global
     /// Any GameObject with this script will not be destroyed when switching between
     /// scenes. However, only one instance of this script may exist in a scene.
     /// Allows retrieving any components in itself or its children.
-    /// </summary>
     /// <seealso cref="ISingletonScript"/>
+    /// </summary>
     public class Singleton : MonoBehaviour
     {
         /// <summary>
@@ -282,7 +289,7 @@ namespace OmiyaGames.Global
         {
             get
             {
-                return Helpers.ShortenUrl(PlatformSpecificStoreLink);
+                return UrlHelpers.ShortenUrl(PlatformSpecificStoreLink);
             }
         }
 
@@ -306,7 +313,7 @@ namespace OmiyaGames.Global
         {
             get
             {
-                return Helpers.ShortenUrl(WebsiteLink);
+                return UrlHelpers.ShortenUrl(WebsiteLink);
             }
         }
 

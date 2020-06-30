@@ -54,8 +54,8 @@ namespace OmiyaGames.Global
     /// <summary>
     /// An abstract class with functions that are called on certain
     /// <code>Singleton</code>'s events.
-    /// </summary>
     /// <seealso cref="Singleton"/>
+    /// </summary>
     public abstract class ISingletonScript : MonoBehaviour
     {
         /// <summary>

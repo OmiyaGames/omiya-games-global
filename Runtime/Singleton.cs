@@ -42,14 +42,22 @@ namespace OmiyaGames.Global
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
     /// <description>Initial verison.</description>
-    /// </item>
-    /// <item>
+    /// </item> <item>
     /// <term>
     /// <strong>Version:</strong> 0.1.0-preview.1<br/>
     /// <strong>Date:</strong> 5/18/2020<br/>
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
     /// <description>Converting code to package.</description>
+    /// </item> <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.1.1-preview.1<br/>
+    /// <strong>Date:</strong> 6/29/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>
+    /// Updating code to compile with the latest version of Common and Web package.
+    /// </description>
     /// </item>
     /// </list>
     /// </remarks>

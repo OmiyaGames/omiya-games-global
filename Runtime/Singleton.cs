@@ -11,7 +11,7 @@ namespace OmiyaGames.Global
     /// <copyright file="Singleton.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
-    /// Copyright (c) 2014-2018 Omiya Games
+    /// Copyright (c) 2014-2020 Omiya Games
     /// 
     /// Permission is hereby granted, free of charge, to any person obtaining a copy
     /// of this software and associated documentation files (the "Software"), to deal
@@ -38,7 +38,6 @@ namespace OmiyaGames.Global
     /// </listheader>
     /// <item>
     /// <term>
-    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
     /// <strong>Date:</strong> 9/22/2016<br/>
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
@@ -282,7 +281,7 @@ namespace OmiyaGames.Global
         {
             get
             {
-                return Helpers.ShortenUrl(PlatformSpecificStoreLink);
+                return UrlHelpers.ShortenUrl(PlatformSpecificStoreLink);
             }
         }
 
@@ -306,7 +305,7 @@ namespace OmiyaGames.Global
         {
             get
             {
-                return Helpers.ShortenUrl(WebsiteLink);
+                return UrlHelpers.ShortenUrl(WebsiteLink);
             }
         }
 

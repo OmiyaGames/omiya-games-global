@@ -1,6 +1,7 @@
 {
     "name": "OmiyaGames.Global.Editor",
     "references": [
+        "OmiyaGames.Common.Editor",
         "OmiyaGames.Global"
     ],
     "includePlatforms": [
@@ -12,5 +13,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

@@ -1,5 +1,9 @@
 # Change Log:
 
+## 0.1.2-preview.1
+
+- New Enhancement: added [`SettingsHelpers`](https://github.com/OmiyaGames/omiya-games-global/blob/master/Editor/SettingsHelpers.cs)
+
 ## 0.1.1-preview.1
 
 - Updating version of each dependency libraries.

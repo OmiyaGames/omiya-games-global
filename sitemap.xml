@@ -1,50 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.Editor.SettingsHelpers.html</loc>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.Editor.html</loc>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.ISingletonScript.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.Singleton.FocusChanged.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.Singleton.GenuineStatus.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.Singleton.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/api/OmiyaGames.Global.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/index.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/manual/changelog.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://omiyagames.github.io/omiya-games-global/manual/README.html</loc>
-    <lastmod>2020-06-30T01:04:39+00:00</lastmod>
+    <lastmod>2020-10-01T01:45:12+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

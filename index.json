@@ -1,4 +1,14 @@
 {
+  "api/OmiyaGames.Global.Editor.html": {
+    "href": "api/OmiyaGames.Global.Editor.html",
+    "title": "Namespace OmiyaGames.Global.Editor | Global documentation",
+    "keywords": "Namespace OmiyaGames.Global.Editor Classes SettingsHelpers Helper methods for setting up settings."
+  },
+  "api/OmiyaGames.Global.Editor.SettingsHelpers.html": {
+    "href": "api/OmiyaGames.Global.Editor.SettingsHelpers.html",
+    "title": "Class SettingsHelpers | Global documentation",
+    "keywords": "Class SettingsHelpers Helper methods for setting up settings. Inheritance Object SettingsHelpers Namespace : OmiyaGames.Global.Editor Assembly : cs.temp.dll.dll Syntax public static class SettingsHelpers Remarks The MIT License (MIT) Copyright (c) 2020 Omiya Games Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Revision Description Version: 0.2.0-preview.1 Date: 6/29/2020 Author: Taro Omiya Initial verison. Fields SettingsDirectory Common directory to retrieve settings. Declaration public const string SettingsDirectory = \"Assets/Omiya Games/Settings/\" Field Value Type Description String Methods CreateOmiyaGamesSettings<SETTINGS>(String) Declaration public static SETTINGS CreateOmiyaGamesSettings<SETTINGS>(string fileName) where SETTINGS : ScriptableObject Parameters Type Name Description String fileName Returns Type Description SETTINGS Type Parameters Name Description SETTINGS GetFullOmiyaGamesSettingsPath(String) Declaration public static string GetFullOmiyaGamesSettingsPath(string fileName) Parameters Type Name Description String fileName Returns Type Description String GetOmiyaGamesSettings<SETTINGS>(String) Declaration public static SETTINGS GetOmiyaGamesSettings<SETTINGS>(string fileName) where SETTINGS : ScriptableObject Parameters Type Name Description String fileName Returns Type Description SETTINGS Type Parameters Name Description SETTINGS"
+  },
   "api/OmiyaGames.Global.html": {
     "href": "api/OmiyaGames.Global.html",
     "title": "Namespace OmiyaGames.Global | Global documentation",
@@ -32,7 +42,7 @@
   "manual/changelog.html": {
     "href": "manual/changelog.html",
     "title": "Change Log: | Global documentation",
-    "keywords": "Change Log: 0.1.1-preview.1 Updating version of each dependency libraries. Updating Singleton to compile with latest dependency changes. 0.1.0-preview.1 Initial release New Feature: added Singleton New Feature: added ISingletonScript"
+    "keywords": "Change Log: 0.1.2-preview.1 New Enhancement: added SettingsHelpers 0.1.1-preview.1 Updating version of each dependency libraries. Updating Singleton to compile with latest dependency changes. 0.1.0-preview.1 Initial release New Feature: added Singleton New Feature: added ISingletonScript"
   },
   "manual/README.html": {
     "href": "manual/README.html",

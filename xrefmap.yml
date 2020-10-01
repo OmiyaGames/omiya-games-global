@@ -7,6 +7,69 @@ references:
   commentId: N:OmiyaGames.Global
   fullName: OmiyaGames.Global
   nameWithType: OmiyaGames.Global
+- uid: OmiyaGames.Global.Editor
+  name: OmiyaGames.Global.Editor
+  href: api/OmiyaGames.Global.Editor.html
+  commentId: N:OmiyaGames.Global.Editor
+  fullName: OmiyaGames.Global.Editor
+  nameWithType: OmiyaGames.Global.Editor
+- uid: OmiyaGames.Global.Editor.SettingsHelpers
+  name: SettingsHelpers
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html
+  commentId: T:OmiyaGames.Global.Editor.SettingsHelpers
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers
+  nameWithType: SettingsHelpers
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings*
+  name: CreateOmiyaGamesSettings
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_CreateOmiyaGamesSettings_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings
+  nameWithType: SettingsHelpers.CreateOmiyaGamesSettings
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings``1(System.String)
+  name: CreateOmiyaGamesSettings<SETTINGS>(String)
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_CreateOmiyaGamesSettings__1_System_String_
+  commentId: M:OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings``1(System.String)
+  name.vb: CreateOmiyaGamesSettings(Of SETTINGS)(String)
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings<SETTINGS>(System.String)
+  fullName.vb: OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings(Of SETTINGS)(System.String)
+  nameWithType: SettingsHelpers.CreateOmiyaGamesSettings<SETTINGS>(String)
+  nameWithType.vb: SettingsHelpers.CreateOmiyaGamesSettings(Of SETTINGS)(String)
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath(System.String)
+  name: GetFullOmiyaGamesSettingsPath(String)
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_GetFullOmiyaGamesSettingsPath_System_String_
+  commentId: M:OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath(System.String)
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath(System.String)
+  nameWithType: SettingsHelpers.GetFullOmiyaGamesSettingsPath(String)
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath*
+  name: GetFullOmiyaGamesSettingsPath
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_GetFullOmiyaGamesSettingsPath_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath
+  nameWithType: SettingsHelpers.GetFullOmiyaGamesSettingsPath
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings*
+  name: GetOmiyaGamesSettings
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_GetOmiyaGamesSettings_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings
+  nameWithType: SettingsHelpers.GetOmiyaGamesSettings
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings``1(System.String)
+  name: GetOmiyaGamesSettings<SETTINGS>(String)
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_GetOmiyaGamesSettings__1_System_String_
+  commentId: M:OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings``1(System.String)
+  name.vb: GetOmiyaGamesSettings(Of SETTINGS)(String)
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings<SETTINGS>(System.String)
+  fullName.vb: OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings(Of SETTINGS)(System.String)
+  nameWithType: SettingsHelpers.GetOmiyaGamesSettings<SETTINGS>(String)
+  nameWithType.vb: SettingsHelpers.GetOmiyaGamesSettings(Of SETTINGS)(String)
+- uid: OmiyaGames.Global.Editor.SettingsHelpers.SettingsDirectory
+  name: SettingsDirectory
+  href: api/OmiyaGames.Global.Editor.SettingsHelpers.html#OmiyaGames_Global_Editor_SettingsHelpers_SettingsDirectory
+  commentId: F:OmiyaGames.Global.Editor.SettingsHelpers.SettingsDirectory
+  fullName: OmiyaGames.Global.Editor.SettingsHelpers.SettingsDirectory
+  nameWithType: SettingsHelpers.SettingsDirectory
 - uid: OmiyaGames.Global.ISingletonScript
   name: ISingletonScript
   href: api/OmiyaGames.Global.ISingletonScript.html

@@ -1,8 +1,9 @@
 {
     "name": "OmiyaGames.Global.Editor",
+    "rootNamespace": "OmiyaGames.Global.Editor",
     "references": [
-        "OmiyaGames.Common.Editor",
-        "OmiyaGames.Global"
+        "GUID:90033a3be777c4196bcbfc7e725c4e31",
+        "GUID:5a47daee1058bbd4ebc7a2d2e7de3c24"
     ],
     "includePlatforms": [
         "Editor"

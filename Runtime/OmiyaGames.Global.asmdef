@@ -1,8 +1,9 @@
 {
     "name": "OmiyaGames.Global",
+    "rootNamespace": "OmiyaGames.Global",
     "references": [
-        "OmiyaGames",
-        "OmiyaGames.Web"
+        "GUID:cdda17712c724478898665290e9a02cc",
+        "GUID:cdc4947907db47a4bafdf68c192e74ff"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

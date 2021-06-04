@@ -1,5 +1,9 @@
 # Change Log:
 
+## 0.1.2-preview.2
+
+- Enhancment: upgrading the assembly definitions and package files.
+
 ## 0.1.2-preview.1
 
 - New Enhancement: added [`SettingsHelpers`](https://github.com/OmiyaGames/omiya-games-global/blob/master/Editor/SettingsHelpers.cs)

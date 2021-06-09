@@ -1,5 +1,9 @@
 # Change Log:
 
+## 1.0.0
+
+- Marking this package as stable, given it's relatively small footprint and unlikeliness to cause problems.
+
 ## 0.1.2-preview.2
 
 - Enhancment: upgrading the assembly definitions and package files.

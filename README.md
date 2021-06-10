@@ -1,6 +1,6 @@
 # [Omiya Games](https://www.omiyagames.com/) - Global
 
-[![openupm](https://img.shields.io/npm/v/com.omiyagames.global?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.global/) [![Documentation](https://github.com/OmiyaGames/omiya-games-global/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/omiya-games-global/) [![Mirroring](https://github.com/OmiyaGames/omiya-games-global/workflows/Mirroring/badge.svg)](https://bitbucket.org/OmiyaGames/omiya-games-global) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
+[![openupm](https://img.shields.io/npm/v/com.omiyagames.global?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.global/) [![Documentation](https://github.com/OmiyaGames/omiya-games-global/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/omiya-games-global/) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
 
 A set of libraries [Omiya Games](https://www.omiyagames.com/) uses to add larger-scoped features and activities, e.g. GameObjects that persists between scene transitions.
 

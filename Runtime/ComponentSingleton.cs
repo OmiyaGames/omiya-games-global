@@ -75,6 +75,16 @@ namespace OmiyaGames.Global
                     };
                     go.SetActive(false);
 
+                    // Mark GameObject as not to destroy
+#if UNITY_EDITOR
+                    if (Application.isPlaying == true)
+                    {
+                        Object.DontDestroyOnLoad(go);
+                    }
+#else
+                    Object.DontDestroyOnLoad(go);
+#endif
+
                     // Create component
                     instance = go.AddComponent<T>();
                 }

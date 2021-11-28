@@ -40,8 +40,6 @@ namespace OmiyaGames.Global
     /// </term>
     /// <description>Initial verison.</description>
     /// </item>
-    /// <description>Converting code to package.</description>
-    /// </item>
     /// </list>
     /// </remarks>
     ///-----------------------------------------------------------------------
@@ -60,11 +58,15 @@ namespace OmiyaGames.Global
         /// <summary>
         /// Instance of the required component type.
         /// </summary>
+        /// <remarks>
+        /// If this property creates a <see cref="GameObject"/>,
+        /// it will be deactivated by default.
+        /// </remarks>
         public static T Instance
         {
             get
             {
-                if(instance == null)
+                if (instance == null)
                 {
                     // Create gameobject
                     GameObject go = new GameObject(typeof(T).Name)
@@ -86,7 +88,7 @@ namespace OmiyaGames.Global
         /// </summary>
         public static void Release()
         {
-            if(instance != null)
+            if (instance != null)
             {
                 Helpers.Destroy(instance.gameObject);
                 instance = null;

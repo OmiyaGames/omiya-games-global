@@ -53,15 +53,107 @@ namespace OmiyaGames.Global
     /// <typeparam name="T">Component type.</typeparam>
     public static class ComponentSingleton<T> where T : Component
     {
+        const bool DefaultActive = false;
+        const HideFlags DefaultFlags = HideFlags.HideAndDontSave;
         static T instance = null;
 
         /// <summary>
         /// Instance of the required component type.
         /// </summary>
         /// <remarks>
-        /// If this property creates a <see cref="GameObject"/>,
+        /// If this method creates a new <see cref="GameObject"/>,
+        /// it will be deactivated by default with <c>hideFlags</c>
+        /// set to <see cref="HideFlags.HideAndDontSave"/>.
+        /// </remarks>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get() => Get(out _);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <remarks>
+        /// If this method creates a new <see cref="GameObject"/>,
+        /// it will be deactivated by default with <c>hideFlags</c>
+        /// set to <see cref="HideFlags.HideAndDontSave"/>.
+        /// </remarks>
+        /// <param name="isFirstTimeCreated">
+        /// True if this is the call that creates the first instance of this
+        /// singleton; false, otherwise (which is most of the time.)
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(out bool isFirstTimeCreated) => Get(DefaultActive, out isFirstTimeCreated);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <remarks>
+        /// If this method creates a new <see cref="GameObject"/>,
         /// it will be deactivated by default.
         /// </remarks>
+        /// <param name="flags">
+        /// If first time creating this singleton, this flag determines
+        /// what condition the associated <see cref="GameObject"/> will be
+        /// in.
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(HideFlags flags) => Get(flags, out _);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <remarks>
+        /// If this method creates a new <see cref="GameObject"/>,
+        /// the <c>hideFlags</c> will be set to <see cref="HideFlags.HideAndDontSave"/>.
+        /// </remarks>
+        /// <param name="isActive">
+        /// If first time creating this singleton, this boolean determines
+        /// whether the associated <see cref="GameObject"/> will be active
+        /// as well.
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(bool isActive) => Get(isActive, out _);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <remarks>
+        /// If this method creates a new <see cref="GameObject"/>,
+        /// it will be deactivated by default.
+        /// </remarks>
+        /// <param name="flags">
+        /// If first time creating this singleton, this flag determines
+        /// what condition the associated <see cref="GameObject"/> will be
+        /// in.
+        /// </param>
+        /// <param name="isFirstTimeCreated">
+        /// True if this is the call that creates the first instance of this
+        /// singleton; false, otherwise (which is most of the time.)
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(HideFlags flags, out bool isFirstTimeCreated) => Get(DefaultActive, flags, out isFirstTimeCreated);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <remarks>
+        /// If this method creates a new <see cref="GameObject"/>,
+        /// the <c>hideFlags</c> will be set to <see cref="HideFlags.HideAndDontSave"/>.
+        /// </remarks>
+        /// <param name="isActive">
+        /// If first time creating this singleton, this boolean determines
+        /// whether the associated <see cref="GameObject"/> will be active
+        /// as well.
+        /// </param>
+        /// <param name="isFirstTimeCreated">
+        /// True if this is the call that creates the first instance of this
+        /// singleton; false, otherwise (which is most of the time.)
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(bool isActive, out bool isFirstTimeCreated) => Get(isActive, DefaultFlags, out isFirstTimeCreated);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
         /// <param name="isActive">
         /// If first time creating this singleton, this boolean determines
         /// whether the associated <see cref="GameObject"/> will be active
@@ -73,8 +165,66 @@ namespace OmiyaGames.Global
         /// in.
         /// </param>
         /// <returns>Instance of the required component type.</returns>
-        public static T Get(bool isActive = false, HideFlags flags = HideFlags.HideAndDontSave)
+        public static T Get(HideFlags flags, bool isActive) => Get(isActive, flags, out _);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <param name="isActive">
+        /// If first time creating this singleton, this boolean determines
+        /// whether the associated <see cref="GameObject"/> will be active
+        /// as well.
+        /// </param>
+        /// <param name="flags">
+        /// If first time creating this singleton, this flag determines
+        /// what condition the associated <see cref="GameObject"/> will be
+        /// in.
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(bool isActive, HideFlags flags) => Get(isActive, flags, out _);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <param name="isActive">
+        /// If first time creating this singleton, this boolean determines
+        /// whether the associated <see cref="GameObject"/> will be active
+        /// as well.
+        /// </param>
+        /// <param name="flags">
+        /// If first time creating this singleton, this flag determines
+        /// what condition the associated <see cref="GameObject"/> will be
+        /// in.
+        /// </param>
+        /// <param name="isFirstTimeCreated">
+        /// True if this is the call that creates the first instance of this
+        /// singleton; false, otherwise (which is most of the time.)
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(HideFlags flags, bool isActive, out bool isFirstTimeCreated) => Get(isActive, flags, out isFirstTimeCreated);
+
+        /// <summary>
+        /// Instance of the required component type.
+        /// </summary>
+        /// <param name="isActive">
+        /// If first time creating this singleton, this boolean determines
+        /// whether the associated <see cref="GameObject"/> will be active
+        /// as well.
+        /// </param>
+        /// <param name="flags">
+        /// If first time creating this singleton, this flag determines
+        /// what condition the associated <see cref="GameObject"/> will be
+        /// in.
+        /// </param>
+        /// <param name="isFirstTimeCreated">
+        /// True if this is the call that creates the first instance of this
+        /// singleton; false, otherwise (which is most of the time.)
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(bool isActive, HideFlags flags, out bool isFirstTimeCreated)
         {
+            isFirstTimeCreated = false;
+
             if (instance == null)
             {
                 // Create gameobject
@@ -96,21 +246,24 @@ namespace OmiyaGames.Global
 
                 // Create component
                 instance = gameObject.AddComponent<T>();
+                isFirstTimeCreated = true;
             }
 
             return instance;
         }
 
         /// <summary>
-        /// Release the component singleton.
+        /// Destroys this singleton and all components attached to it.
         /// </summary>
-        public static void Release()
+        public static bool Release()
         {
             if (instance != null)
             {
                 Helpers.Destroy(instance.gameObject);
                 instance = null;
+                return true;
             }
+            return false;
         }
     }
 }

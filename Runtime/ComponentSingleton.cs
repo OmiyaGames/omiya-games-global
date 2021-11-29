@@ -62,35 +62,43 @@ namespace OmiyaGames.Global
         /// If this property creates a <see cref="GameObject"/>,
         /// it will be deactivated by default.
         /// </remarks>
-        public static T Instance
+        /// <param name="isActive">
+        /// If first time creating this singleton, this boolean determines
+        /// whether the associated <see cref="GameObject"/> will be active
+        /// as well.
+        /// </param>
+        /// <param name="flags">
+        /// If first time creating this singleton, this flag determines
+        /// what condition the associated <see cref="GameObject"/> will be
+        /// in.
+        /// </param>
+        /// <returns>Instance of the required component type.</returns>
+        public static T Get(bool isActive = false, HideFlags flags = HideFlags.HideAndDontSave)
         {
-            get
+            if (instance == null)
             {
-                if (instance == null)
+                // Create gameobject
+                GameObject gameObject = new GameObject(typeof(T).Name)
                 {
-                    // Create gameobject
-                    GameObject go = new GameObject(typeof(T).Name)
-                    {
-                        hideFlags = HideFlags.HideAndDontSave
-                    };
-                    go.SetActive(false);
+                    hideFlags = flags
+                };
+                gameObject.SetActive(isActive);
 
-                    // Mark GameObject as not to destroy
+                // Mark GameObject as not to destroy
 #if UNITY_EDITOR
-                    if (Application.isPlaying == true)
-                    {
-                        Object.DontDestroyOnLoad(go);
-                    }
+                if (Application.isPlaying == true)
+                {
+                    Object.DontDestroyOnLoad(gameObject);
+                }
 #else
-                    Object.DontDestroyOnLoad(go);
+                Object.DontDestroyOnLoad(go);
 #endif
 
-                    // Create component
-                    instance = go.AddComponent<T>();
-                }
-
-                return instance;
+                // Create component
+                instance = gameObject.AddComponent<T>();
             }
+
+            return instance;
         }
 
         /// <summary>

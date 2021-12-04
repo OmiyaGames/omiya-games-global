@@ -1,6 +1,6 @@
 # [Omiya Games](https://www.omiyagames.com/) - Global
 
-[![openupm](https://img.shields.io/npm/v/com.omiyagames.global?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.global/) [![Documentation](https://github.com/OmiyaGames/omiya-games-global/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/omiya-games-global/) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
+[![openupm](https://img.shields.io/npm/v/com.omiyagames.global?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.global/) [![Documentation](https://github.com/OmiyaGames/omiya-games-global/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/omiya-games-global/) [![Ko-fi Badge](https://img.shields.io/badge/donate-ko--fi-29abe0.svg?logo=ko-fi)](https://ko-fi.com/I3I51KS8F) [![License Badge](https://img.shields.io/github/license/OmiyaGames/omiya-games-global)](/LICENSE.md) 
 
 A set of libraries [Omiya Games](https://www.omiyagames.com/) uses to add larger-scoped features and activities, e.g. GameObjects that persists between scene transitions.
 
@@ -35,6 +35,6 @@ openupm add com.omiyagames.global
 
 ## LICENSE
 
-Overall package is licensed under [MIT](https://github.com/OmiyaGames/omiya-games-global/blob/master/LICENSE.md), unless otherwise noted in the [3rd party licenses](https://github.com/OmiyaGames/omiya-games-global/blob/master/THIRD%20PARTY%20NOTICES.md) file and/or source code.
+Overall package is licensed under [MIT](https://github.com/OmiyaGames/omiya-games-global/blob/main/LICENSE.md), unless otherwise noted in the [3rd party licenses](https://github.com/OmiyaGames/omiya-games-global/blob/main/THIRD%20PARTY%20NOTICES.md) file and/or source code.
 
 Copyright (c) 2019-2021 Omiya Games

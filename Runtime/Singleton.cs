@@ -176,6 +176,7 @@ namespace OmiyaGames.Global
         [SerializeField]
         private PlatformSpecificLink storeUrls;
 
+		[NonSerialized]
         private ISingletonScript[] allSingletonScriptsCache = null;
         private GenuineStatus genuineStatus = GenuineStatus.Unchecked;
 
@@ -406,7 +407,7 @@ namespace OmiyaGames.Global
 
         void RunSingletonEvents()
         {
-            if (allSingletonScriptsCache == null)
+            if ((allSingletonScriptsCache == null) || (allSingletonScriptsCache.Length == 0))
             {
                 // Cache all the singleton scripts
                 allSingletonScriptsCache = Instance.GetComponentsInChildren<ISingletonScript>();

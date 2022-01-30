@@ -241,7 +241,7 @@ namespace OmiyaGames.Global
                     Object.DontDestroyOnLoad(gameObject);
                 }
 #else
-                Object.DontDestroyOnLoad(go);
+                Object.DontDestroyOnLoad(gameObject);
 #endif
 
                 // Create component

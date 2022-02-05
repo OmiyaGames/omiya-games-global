@@ -59,10 +59,10 @@ namespace OmiyaGames.Global.Editor
 		public const float HorizontalMargin = EditorHelpers.VerticalMargin;
 
 		/// <summary>
-		/// The path to the <see cref="ScriptableObject"/>
-		/// in the Assets folder.
+		/// The name this settings will appear in the
+		/// Project Setting's left-sidebar.
 		/// </summary>
-		public abstract string AssetPath
+		public abstract string SidebarDisplayPath
 		{
 			get;
 		}
@@ -106,7 +106,7 @@ namespace OmiyaGames.Global.Editor
 			if (GUI.Button(buttonPosition, EditButtonText) == true)
 			{
 				// Open Project Settings
-				SettingsService.OpenProjectSettings(AssetPath);
+				SettingsService.OpenProjectSettings(SidebarDisplayPath);
 			}
 
 			// Determine Rects for reset button

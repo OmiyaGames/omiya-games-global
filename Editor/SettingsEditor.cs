@@ -54,10 +54,10 @@ namespace OmiyaGames.Global.Editor
 		static readonly GUIContent EditButtonText = new GUIContent("Edit in Project Settings");
 
 		/// <summary>
-		/// The path to the <see cref="ScriptableObject"/>
-		/// in the Assets folder.
+		/// The name this settings will appear in the
+		/// Project Setting's left-sidebar.
 		/// </summary>
-		public abstract string AssetPath
+		public abstract string SidebarDisplayPath
 		{
 			get;
 		}
@@ -77,7 +77,7 @@ namespace OmiyaGames.Global.Editor
 			if (GUILayout.Button(EditButtonText) == true)
 			{
 				// Open Project Settings
-				SettingsService.OpenProjectSettings(AssetPath);
+				SettingsService.OpenProjectSettings(SidebarDisplayPath);
 			}
 
 			serializedObject.ApplyModifiedProperties();

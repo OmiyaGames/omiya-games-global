@@ -70,7 +70,7 @@ namespace OmiyaGames.Global.Editor
 		/// <summary>
 		/// Sets the property to the current settings
 		/// </summary>
-		/// <param name="property"></param>
+		/// <param name="property">The property to update.</param>
 		public abstract void Reset(SerializedProperty property);
 
 		/// <inheritdoc/>

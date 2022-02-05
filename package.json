@@ -3,7 +3,7 @@
   "displayName": "Omiya Games - Global",
   "version": "1.2.0",
   "unity": "2021.2",
-  "unityRelease": "5f1",
+  "unityRelease": "10f1",
   "description": "Contains scripts intended for large scope accessibility.",
   "category": "Library",
   "type": "library",

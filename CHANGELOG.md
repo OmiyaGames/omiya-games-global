@@ -1,5 +1,9 @@
 # Change Log:
 
+## 1.2.0
+
+- **New Enhancement:** TODO
+
 ## 1.1.0
 
 - **New Feature:** added [`ComponentSingleton`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/ComponentSingleton.cs), which creates a singleton instance of a component!

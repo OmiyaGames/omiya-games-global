@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0",
-    "com.omiyagames.common": "1.1.0",
+    "com.omiyagames.common": "1.2.0",
     "com.omiyagames.web": "1.0.0"
   },
   "keywords": [

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Editor;
+using UnityEditor;
 
 namespace OmiyaGames.Global.Editor
 {

@@ -2,7 +2,9 @@
 
 ## 1.2.0
 
-- **New Enhancement:** TODO
+- **New Feature:** added abstract class, [`SettingsEditor`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsEditor.cs).  This editor simply displays one button, prompting the user to open the Project Settings window instead.
+- **New Feature:** added abstract class, [`SettingsPropertyDrawer`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsPropertyDrawer.cs)  This `PropertyDrawer` automatically calls `Reset(SerializedProperty)` as soon as the user sees the serialized variable in the inspector.  Provides an opportunity for the developer to replace the variable with an existing asset in the project.
+- **Bug Fix:** fixed [`ComponentSingleton`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/ComponentSingleton.cs) to actually work on runtime.
 
 ## 1.1.0
 
@@ -14,7 +16,7 @@
 
 ## 0.1.2-preview.2
 
-- Enhancment: upgrading the assembly definitions and package files.
+- **New Enhancement:** upgrading the assembly definitions and package files.
 
 ## 0.1.2-preview.1
 

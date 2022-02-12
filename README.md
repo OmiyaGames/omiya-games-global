@@ -37,4 +37,4 @@ openupm add com.omiyagames.global
 
 Overall package is licensed under [MIT](https://github.com/OmiyaGames/omiya-games-global/blob/main/LICENSE.md), unless otherwise noted in the [3rd party licenses](https://github.com/OmiyaGames/omiya-games-global/blob/main/THIRD%20PARTY%20NOTICES.md) file and/or source code.
 
-Copyright (c) 2019-2021 Omiya Games
+Copyright (c) 2019-2022 Omiya Games

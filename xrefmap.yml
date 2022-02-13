@@ -7,12 +7,170 @@ references:
   commentId: N:OmiyaGames.Global
   fullName: OmiyaGames.Global
   nameWithType: OmiyaGames.Global
+- uid: OmiyaGames.Global.ComponentSingleton`1
+  name: ComponentSingleton<T>
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html
+  commentId: T:OmiyaGames.Global.ComponentSingleton`1
+  name.vb: ComponentSingleton(Of T)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T)
+  nameWithType: ComponentSingleton<T>
+  nameWithType.vb: ComponentSingleton(Of T)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get
+  name: Get()
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get()
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get()
+  nameWithType: ComponentSingleton<T>.Get()
+  nameWithType.vb: ComponentSingleton(Of T).Get()
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags)
+  name: Get(HideFlags)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_HideFlags_
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(HideFlags)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(HideFlags)
+  nameWithType: ComponentSingleton<T>.Get(HideFlags)
+  nameWithType.vb: ComponentSingleton(Of T).Get(HideFlags)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags,System.Boolean)
+  name: Get(HideFlags, Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_HideFlags_System_Boolean_
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags,System.Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(HideFlags, System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(HideFlags, System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(HideFlags, Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(HideFlags, Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags,System.Boolean,System.Boolean@)
+  name: Get(HideFlags, Boolean, out Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_HideFlags_System_Boolean_System_Boolean__
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags,System.Boolean,System.Boolean@)
+  name.vb: Get(HideFlags, Boolean, ByRef Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(HideFlags, System.Boolean, out System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(HideFlags, System.Boolean, ByRef System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(HideFlags, Boolean, out Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(HideFlags, Boolean, ByRef Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags,System.Boolean@)
+  name: Get(HideFlags, out Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_HideFlags_System_Boolean__
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(HideFlags,System.Boolean@)
+  name.vb: Get(HideFlags, ByRef Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(HideFlags, out System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(HideFlags, ByRef System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(HideFlags, out Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(HideFlags, ByRef Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean)
+  name: Get(Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_System_Boolean_
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean,HideFlags)
+  name: Get(Boolean, HideFlags)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_System_Boolean_HideFlags_
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean,HideFlags)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(System.Boolean, HideFlags)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(System.Boolean, HideFlags)
+  nameWithType: ComponentSingleton<T>.Get(Boolean, HideFlags)
+  nameWithType.vb: ComponentSingleton(Of T).Get(Boolean, HideFlags)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean,HideFlags,System.Boolean@)
+  name: Get(Boolean, HideFlags, out Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_System_Boolean_HideFlags_System_Boolean__
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean,HideFlags,System.Boolean@)
+  name.vb: Get(Boolean, HideFlags, ByRef Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(System.Boolean, HideFlags, out System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(System.Boolean, HideFlags, ByRef System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(Boolean, HideFlags, out Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(Boolean, HideFlags, ByRef Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean,System.Boolean@)
+  name: Get(Boolean, out Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_System_Boolean_System_Boolean__
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean,System.Boolean@)
+  name.vb: Get(Boolean, ByRef Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(System.Boolean, out System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(System.Boolean, ByRef System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(Boolean, out Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(Boolean, ByRef Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean@)
+  name: Get(out Boolean)
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_System_Boolean__
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Get(System.Boolean@)
+  name.vb: Get(ByRef Boolean)
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get(out System.Boolean)
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get(ByRef System.Boolean)
+  nameWithType: ComponentSingleton<T>.Get(out Boolean)
+  nameWithType.vb: ComponentSingleton(Of T).Get(ByRef Boolean)
+- uid: OmiyaGames.Global.ComponentSingleton`1.Get*
+  name: Get
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Get_
+  commentId: Overload:OmiyaGames.Global.ComponentSingleton`1.Get
+  isSpec: "True"
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Get
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Get
+  nameWithType: ComponentSingleton<T>.Get
+  nameWithType.vb: ComponentSingleton(Of T).Get
+- uid: OmiyaGames.Global.ComponentSingleton`1.Release
+  name: Release()
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Release
+  commentId: M:OmiyaGames.Global.ComponentSingleton`1.Release
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Release()
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Release()
+  nameWithType: ComponentSingleton<T>.Release()
+  nameWithType.vb: ComponentSingleton(Of T).Release()
+- uid: OmiyaGames.Global.ComponentSingleton`1.Release*
+  name: Release
+  href: api/OmiyaGames.Global.ComponentSingleton-1.html#OmiyaGames_Global_ComponentSingleton_1_Release_
+  commentId: Overload:OmiyaGames.Global.ComponentSingleton`1.Release
+  isSpec: "True"
+  fullName: OmiyaGames.Global.ComponentSingleton<T>.Release
+  fullName.vb: OmiyaGames.Global.ComponentSingleton(Of T).Release
+  nameWithType: ComponentSingleton<T>.Release
+  nameWithType.vb: ComponentSingleton(Of T).Release
 - uid: OmiyaGames.Global.Editor
   name: OmiyaGames.Global.Editor
   href: api/OmiyaGames.Global.Editor.html
   commentId: N:OmiyaGames.Global.Editor
   fullName: OmiyaGames.Global.Editor
   nameWithType: OmiyaGames.Global.Editor
+- uid: OmiyaGames.Global.Editor.SettingsEditor
+  name: SettingsEditor
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html
+  commentId: T:OmiyaGames.Global.Editor.SettingsEditor
+  fullName: OmiyaGames.Global.Editor.SettingsEditor
+  nameWithType: SettingsEditor
+- uid: OmiyaGames.Global.Editor.SettingsEditor.HelpInfo
+  name: HelpInfo
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_HelpInfo
+  commentId: F:OmiyaGames.Global.Editor.SettingsEditor.HelpInfo
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.HelpInfo
+  nameWithType: SettingsEditor.HelpInfo
+- uid: OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_OnInspectorGUI
+  commentId: M:OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI()
+  nameWithType: SettingsEditor.OnInspectorGUI()
+- uid: OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_OnInspectorGUI_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI
+  nameWithType: SettingsEditor.OnInspectorGUI
+- uid: OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
+  name: SidebarDisplayPath
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath
+  commentId: P:OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
+  nameWithType: SettingsEditor.SidebarDisplayPath
+- uid: OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath*
+  name: SidebarDisplayPath
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
+  nameWithType: SettingsEditor.SidebarDisplayPath
 - uid: OmiyaGames.Global.Editor.SettingsHelpers
   name: SettingsHelpers
   href: api/OmiyaGames.Global.Editor.SettingsHelpers.html
@@ -70,6 +228,69 @@ references:
   commentId: F:OmiyaGames.Global.Editor.SettingsHelpers.SettingsDirectory
   fullName: OmiyaGames.Global.Editor.SettingsHelpers.SettingsDirectory
   nameWithType: SettingsHelpers.SettingsDirectory
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer
+  name: SettingsPropertyDrawer
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html
+  commentId: T:OmiyaGames.Global.Editor.SettingsPropertyDrawer
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer
+  nameWithType: SettingsPropertyDrawer
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.EditButtonWidth
+  name: EditButtonWidth
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_EditButtonWidth
+  commentId: F:OmiyaGames.Global.Editor.SettingsPropertyDrawer.EditButtonWidth
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.EditButtonWidth
+  nameWithType: SettingsPropertyDrawer.EditButtonWidth
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.HorizontalMargin
+  name: HorizontalMargin
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_HorizontalMargin
+  commentId: F:OmiyaGames.Global.Editor.SettingsPropertyDrawer.HorizontalMargin
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.HorizontalMargin
+  nameWithType: SettingsPropertyDrawer.HorizontalMargin
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:OmiyaGames.Global.Editor.SettingsPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: SettingsPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.OnGUI*
+  name: OnGUI
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_OnGUI_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsPropertyDrawer.OnGUI
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.OnGUI
+  nameWithType: SettingsPropertyDrawer.OnGUI
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.Reset(SerializedProperty)
+  name: Reset(SerializedProperty)
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_Reset_SerializedProperty_
+  commentId: M:OmiyaGames.Global.Editor.SettingsPropertyDrawer.Reset(SerializedProperty)
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.Reset(SerializedProperty)
+  nameWithType: SettingsPropertyDrawer.Reset(SerializedProperty)
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.Reset*
+  name: Reset
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_Reset_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsPropertyDrawer.Reset
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.Reset
+  nameWithType: SettingsPropertyDrawer.Reset
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.ResetButtonWidth
+  name: ResetButtonWidth
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_ResetButtonWidth
+  commentId: F:OmiyaGames.Global.Editor.SettingsPropertyDrawer.ResetButtonWidth
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.ResetButtonWidth
+  nameWithType: SettingsPropertyDrawer.ResetButtonWidth
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.SidebarDisplayPath
+  name: SidebarDisplayPath
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_SidebarDisplayPath
+  commentId: P:OmiyaGames.Global.Editor.SettingsPropertyDrawer.SidebarDisplayPath
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.SidebarDisplayPath
+  nameWithType: SettingsPropertyDrawer.SidebarDisplayPath
+- uid: OmiyaGames.Global.Editor.SettingsPropertyDrawer.SidebarDisplayPath*
+  name: SidebarDisplayPath
+  href: api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html#OmiyaGames_Global_Editor_SettingsPropertyDrawer_SidebarDisplayPath_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsPropertyDrawer.SidebarDisplayPath
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsPropertyDrawer.SidebarDisplayPath
+  nameWithType: SettingsPropertyDrawer.SidebarDisplayPath
 - uid: OmiyaGames.Global.ISingletonScript
   name: ISingletonScript
   href: api/OmiyaGames.Global.ISingletonScript.html

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class SettingsHelpers
+    <title>Class SettingsEditor
    | Global documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class SettingsHelpers
+    <meta name="title" content="Class SettingsEditor
    | Global documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,29 +78,30 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OmiyaGames.Global.Editor.SettingsHelpers">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Global.Editor.SettingsEditor">
   
   
-  <h1 id="OmiyaGames_Global_Editor_SettingsHelpers" data-uid="OmiyaGames.Global.Editor.SettingsHelpers" class="text-break">Class SettingsHelpers
+  <h1 id="OmiyaGames_Global_Editor_SettingsEditor" data-uid="OmiyaGames.Global.Editor.SettingsEditor" class="text-break">Class SettingsEditor
   </h1>
-  <div class="markdown level0 summary"><p>Helper methods for setting up settings.</p>
+  <div class="markdown level0 summary"><p>Editor for <see cref="!:ScriptableObject"></see> used as project settings.
+Appears under inspector when selecting the asset.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">SettingsHelpers</span></div>
+    <div class="level1"><span class="xref">SettingsEditor</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Global.Editor.html">OmiyaGames.Global.Editor</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="OmiyaGames_Global_Editor_SettingsHelpers_syntax">Syntax</h5>
+  <h5 id="OmiyaGames_Global_Editor_SettingsEditor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class SettingsHelpers</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SettingsEditor : UnityEditor.Editor</code></pre>
   </div>
-  <h5 id="OmiyaGames_Global_Editor_SettingsHelpers_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p><copyright file="SettingsHelpers.cs" company="Omiya Games">
+  <h5 id="OmiyaGames_Global_Editor_SettingsEditor_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><copyright file="SettingsEditor.cs" company="Omiya Games">
 The MIT License (MIT)<p>
-<p>Copyright (c) 2020 Omiya Games</p>
+<p>Copyright (c) 2020-2022 Omiya Games</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the &quot;Software&quot;), to deal
 in the Software without restriction, including without limitation the rights
@@ -118,8 +119,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </copyright>
 <table><thead><tr><th>Revision</th><th>Description</th></tr></thead><tbody><tr><td>
-<strong>Version:</strong> 0.2.0-preview.1<br>
-<strong>Date:</strong> 6/29/2020<br>
+<strong>Version:</strong> 1.2.0<br>
+<strong>Date:</strong> 2/4/2022<br>
 <strong>Author:</strong> Taro Omiya
 </td><td>Initial verison.</td></tr></tbody></table></p>
 </div>
@@ -127,15 +128,43 @@ THE SOFTWARE.
   </h3>
   
   
-  <h4 id="OmiyaGames_Global_Editor_SettingsHelpers_SettingsDirectory" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.SettingsDirectory">SettingsDirectory</h4>
-  <div class="markdown level1 summary"><p>Common directory to retrieve settings.</p>
+  <h4 id="OmiyaGames_Global_Editor_SettingsEditor_HelpInfo" data-uid="OmiyaGames.Global.Editor.SettingsEditor.HelpInfo">HelpInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HelpInfo = &quot;This is a project settings asset that can be edited in the Project Settings window. Please do not move or delete it from the project. If using a version control tool, remember to add this asset into the repo.&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath*"></a>
+  <h4 id="OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath" data-uid="OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath">SidebarDisplayPath</h4>
+  <div class="markdown level1 summary"><p>The name this settings will appear in the
+Project Setting&apos;s left-sidebar.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SettingsDirectory = &quot;Assets/Omiya Games/Settings/&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract string SidebarDisplayPath { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -154,162 +183,16 @@ THE SOFTWARE.
   </h3>
   
   
-  <a id="OmiyaGames_Global_Editor_SettingsHelpers_CreateOmiyaGamesSettings_" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings*"></a>
-  <h4 id="OmiyaGames_Global_Editor_SettingsHelpers_CreateOmiyaGamesSettings__1_System_String_" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.CreateOmiyaGamesSettings``1(System.String)">CreateOmiyaGamesSettings&lt;SETTINGS&gt;(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OmiyaGames_Global_Editor_SettingsEditor_OnInspectorGUI_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI*"></a>
+  <h4 id="OmiyaGames_Global_Editor_SettingsEditor_OnInspectorGUI" data-uid="OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI">OnInspectorGUI()</h4>
+  <div class="markdown level1 summary"><p>Draws a message and a button prompting
+user to open Project Settings window.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SETTINGS CreateOmiyaGamesSettings&lt;SETTINGS&gt;(string fileName)
-    where SETTINGS : ScriptableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">fileName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SETTINGS</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">SETTINGS</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="OmiyaGames_Global_Editor_SettingsHelpers_GetFullOmiyaGamesSettingsPath_" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath*"></a>
-  <h4 id="OmiyaGames_Global_Editor_SettingsHelpers_GetFullOmiyaGamesSettingsPath_System_String_" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.GetFullOmiyaGamesSettingsPath(System.String)">GetFullOmiyaGamesSettingsPath(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetFullOmiyaGamesSettingsPath(string fileName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">fileName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="OmiyaGames_Global_Editor_SettingsHelpers_GetOmiyaGamesSettings_" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings*"></a>
-  <h4 id="OmiyaGames_Global_Editor_SettingsHelpers_GetOmiyaGamesSettings__1_System_String_" data-uid="OmiyaGames.Global.Editor.SettingsHelpers.GetOmiyaGamesSettings``1(System.String)">GetOmiyaGamesSettings&lt;SETTINGS&gt;(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SETTINGS GetOmiyaGamesSettings&lt;SETTINGS&gt;(string fileName)
-    where SETTINGS : ScriptableObject</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">fileName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SETTINGS</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">SETTINGS</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

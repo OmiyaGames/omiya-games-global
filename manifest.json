@@ -24,11 +24,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.ComponentSingleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.ComponentSingleton-1.html",
+          "hash": "7dP35iv5j6dCjrR2KjkfzEmmdU4n4aEDhsMdmm9r+U8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.Editor.SettingsEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.Editor.SettingsEditor.html",
+          "hash": "YhZTWB+GRaQNe9uG1pMPk3HUw4MUELkKyMJQJvRdFHA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OmiyaGames.Global.Editor.SettingsHelpers.yml",
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.Editor.SettingsHelpers.html",
-          "hash": "94yTla7aiexDspOaxF4+CA=="
+          "hash": "bTRZ3Qik6n+dA2rq1rtGFZmHigRM1RY35OP0lSRiBkw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.Editor.SettingsPropertyDrawer.html",
+          "hash": "phpi6ie/+NmSHKOeG+A9FHdwLd1YDZXMhIy6wuwlzrg="
         }
       },
       "is_incremental": false,
@@ -40,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.Editor.html",
-          "hash": "L16aTi+FWNWL3mjh0+RJ5w=="
+          "hash": "hNzwY14XaravRuhx+wwPE3VOFmtwAPwv7M1N+PbVjyQ="
         }
       },
       "is_incremental": false,
@@ -52,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.ISingletonScript.html",
-          "hash": "znp0rvOQHquLjzIMMUTNzg=="
+          "hash": "iI3tTSIpRtD3jTbWnf6dzqXXGS4/KS237+IteDajYQs="
         }
       },
       "is_incremental": false,
@@ -64,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.Singleton.FocusChanged.html",
-          "hash": "iP5fvTYjmjZH1AReZeuiQA=="
+          "hash": "rtROIU19PAX9tKYu75u0FE8jjD4aNxiKUpvcDpgrVeE="
         }
       },
       "is_incremental": false,
@@ -76,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.Singleton.GenuineStatus.html",
-          "hash": "Ef2tR7o4DxOAVxObXGJkXw=="
+          "hash": "WV1HW8+noHJeeiKQTm8S1LkGlBYSHtf45f0YRgY2AwQ="
         }
       },
       "is_incremental": false,
@@ -88,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.Singleton.html",
-          "hash": "6BgDWfjN27xluTaG9+Bcsw=="
+          "hash": "ysis4AkTJHGoUxFpftMoRoQSUa6Et8BFOZTPVV9gZ4c="
         }
       },
       "is_incremental": false,
@@ -100,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.html",
-          "hash": "mnz7jn5UyoZptxEEABeBww=="
+          "hash": "tGoQIBputgt0yaRfI5f7uOhXLE+FsJ7gTgyLebiJ98A="
         }
       },
       "is_incremental": false,
@@ -112,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ec4fzr9utgf1jYCu+k1fvg=="
+          "hash": "wEnmOEJ1jqmSwnP8YWdS/vc22mIYNLgRFkUA9Adi8zI="
         }
       },
       "is_incremental": false,
@@ -124,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "k/Lz15GAw1xJm3vUNzRNkA=="
+          "hash": "B5IPDCJ8yzJMuNByA+e+loU7LTPEvq5z2OMUn8UAzdg="
         }
       },
       "is_incremental": false,
@@ -136,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/README.html",
-          "hash": "mXC05XrBE01Q3ykbmSAPMg=="
+          "hash": "gIPDPJmCNQgWHZQwT1CKiUNXNijsm6RN5akqNMCCI/U="
         }
       },
       "is_incremental": false,
@@ -148,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/changelog.html",
-          "hash": "4HRy4xoVRdWCsel8KHY96A=="
+          "hash": "oIuN5KLgqRbWAWlBQYIQL6DJaR/+p/gqCDqULNcb7rM="
         }
       },
       "is_incremental": false,
@@ -160,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "rHik6BFDrIBb6sneVOS/BA=="
+          "hash": "UrHIAyszIPz6NyrY79tnSTa2cbRXbcGtwFx8+oS5D6o="
         }
       },
       "is_incremental": false,
@@ -183,7 +219,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "/hm+ntM53K9cNFTw+qFAxg=="
+          "hash": "+Wi/kwaXUIal1mJIEmOp58XZA/zIBXAyk4u91IcosKg="
         }
       },
       "is_incremental": false,
@@ -210,7 +246,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

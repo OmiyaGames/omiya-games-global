@@ -8,7 +8,7 @@
     <title>Change Log: | Global documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Change Log: | Global documentation ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -79,20 +79,38 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="change-log">Change Log:</h1>
 
+<h2 id="120">1.2.0</h2>
+<ul>
+<li><strong>New Feature:</strong> added abstract class, <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsEditor.cs"><code>SettingsEditor</code></a>.  This editor simply displays one button, prompting the user to open the Project Settings window instead.</li>
+<li><strong>New Feature:</strong> added abstract class, <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsPropertyDrawer.cs"><code>SettingsPropertyDrawer</code></a>  This <code>PropertyDrawer</code> automatically calls <code>Reset(SerializedProperty)</code> as soon as the user sees the serialized variable in the inspector.  Provides an opportunity for the developer to replace the variable with an existing asset in the project.</li>
+<li><strong>Bug Fix:</strong> fixed <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/ComponentSingleton.cs"><code>ComponentSingleton</code></a> to actually work on runtime.</li>
+</ul>
+<h2 id="110">1.1.0</h2>
+<ul>
+<li><strong>New Feature:</strong> added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/ComponentSingleton.cs"><code>ComponentSingleton</code></a>, which creates a singleton instance of a component!</li>
+</ul>
+<h2 id="100">1.0.0</h2>
+<ul>
+<li>Marking this package as stable, given it&#39;s relatively small footprint and unlikeliness to cause problems.</li>
+</ul>
+<h2 id="012-preview2">0.1.2-preview.2</h2>
+<ul>
+<li><strong>New Enhancement:</strong> upgrading the assembly definitions and package files.</li>
+</ul>
 <h2 id="012-preview1">0.1.2-preview.1</h2>
 <ul>
-<li>New Enhancement: added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/master/Editor/SettingsHelpers.cs"><code>SettingsHelpers</code></a></li>
+<li><strong>New Enhancement:</strong> added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsHelpers.cs"><code>SettingsHelpers</code></a></li>
 </ul>
 <h2 id="011-preview1">0.1.1-preview.1</h2>
 <ul>
 <li>Updating version of each dependency libraries.</li>
-<li>Updating <a href="https://github.com/OmiyaGames/omiya-games-global/blob/master/Runtime/Singleton.cs"><code>Singleton</code></a> to compile with latest dependency changes.</li>
+<li>Updating <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/Singleton.cs"><code>Singleton</code></a> to compile with latest dependency changes.</li>
 </ul>
 <h2 id="010-preview1">0.1.0-preview.1</h2>
 <ul>
 <li>Initial release</li>
-<li>New Feature: added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/master/Runtime/Singleton.cs"><code>Singleton</code></a></li>
-<li>New Feature: added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/master/Runtime/ISingletonScript.cs"><code>ISingletonScript</code></a></li>
+<li>New Feature: added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/Singleton.cs"><code>Singleton</code></a></li>
+<li>New Feature: added <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/ISingletonScript.cs"><code>ISingletonScript</code></a></li>
 </ul>
 </article>
           </div>
@@ -102,12 +120,13 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/OmiyaGames/omiya-games-global/blob/master/Documentation~/manual/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/OmiyaGames/omiya-games-global/blob/main/Documentation~/manual/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -121,7 +140,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright © 2020 Omiya Games
+            Copyright © 2020-2022 Omiya Games
             
           </div>
         </div>

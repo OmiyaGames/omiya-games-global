@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEditor.UIElements;
 
 namespace OmiyaGames.Global.Editor
 {
@@ -63,11 +65,55 @@ namespace OmiyaGames.Global.Editor
 		}
 
 		/// <summary>
+		/// The path to the UXML file for this editor.
+		/// Returns null if one isn't intended to be displayed.
+		/// </summary>
+		public virtual string UxmlPath => null;
+
+		/// <summary>
+		/// The visual elmenet to display
+		/// </summary>
+		protected VisualElement RootElement
+		{
+			get;
+			set;
+		} = null;
+
+		/// <inheritdoc/>
+		public override VisualElement CreateInspectorGUI()
+		{
+			// Check if UXML is empty
+			if (string.IsNullOrEmpty(UxmlPath))
+			{
+				// do default behavior
+				return base.CreateInspectorGUI();
+			}
+
+			// Create a tree from the UXML file.
+			RootElement = new VisualElement();
+			VisualTreeAsset originalTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UxmlPath);
+			originalTree.CloneTree(RootElement);
+
+			// Bind to the object
+			RootElement.Bind(serializedObject);
+			return RootElement;
+		}
+
+		/// <summary>
 		/// Draws a message and a button prompting
 		/// user to open Project Settings window.
 		/// </summary>
 		public override void OnInspectorGUI()
 		{
+			// Check if root element exists
+			if (RootElement != null)
+			{
+				// Do default behavior
+				base.OnInspectorGUI();
+				return;
+			}
+
+			// Draw custom inspector
 			serializedObject.Update();
 
 			// Post help box
@@ -84,3 +130,4 @@ namespace OmiyaGames.Global.Editor
 		}
 	}
 }
+

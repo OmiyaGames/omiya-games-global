@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEditor.UIElements;
 
 namespace OmiyaGames.Global.Editor
 {
@@ -40,6 +42,17 @@ namespace OmiyaGames.Global.Editor
 	/// <strong>Author:</strong> Taro Omiya
 	/// </term>
 	/// <description>Initial verison.</description>
+	/// <item></item>
+	/// <term>
+	/// <strong>Version:</strong> 1.3.0<br/>
+	/// <strong>Date:</strong> 2/19/2022<br/>
+	/// <strong>Author:</strong> Taro Omiya
+	/// </term>
+	/// <description>
+	/// Adding <seealso cref="UxmlPath"/> and
+	/// <seealso cref="CreateInspectorGUI"/> to allow
+	/// customizing this editor a little better.
+	/// </description>
 	/// </item>
 	/// </list>
 	/// </remarks>
@@ -63,11 +76,60 @@ namespace OmiyaGames.Global.Editor
 		}
 
 		/// <summary>
+		/// The path to the UXML file for this editor.
+		/// Returns null if one isn't intended to be displayed.
+		/// </summary>
+		public virtual string UxmlPath => null;
+
+		/// <summary>
+		/// The visual element to display
+		/// </summary>
+		/// <remarks>
+		/// Override to replace this property and/or
+		/// <seealso cref="CreateInspectorGUI"/>
+		/// to customize the editor to your liking.
+		/// </remarks>
+		protected VisualElement RootElement
+		{
+			get;
+			set;
+		} = null;
+
+		/// <inheritdoc/>
+		public override VisualElement CreateInspectorGUI()
+		{
+			// Check if UXML is empty
+			if (string.IsNullOrEmpty(UxmlPath))
+			{
+				// do default behavior
+				return base.CreateInspectorGUI();
+			}
+
+			// Create a tree from the UXML file.
+			RootElement = new VisualElement();
+			VisualTreeAsset originalTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UxmlPath);
+			originalTree.CloneTree(RootElement);
+
+			// Bind to the object
+			RootElement.Bind(serializedObject);
+			return RootElement;
+		}
+
+		/// <summary>
 		/// Draws a message and a button prompting
 		/// user to open Project Settings window.
 		/// </summary>
 		public override void OnInspectorGUI()
 		{
+			// Check if root element exists
+			if (RootElement != null)
+			{
+				// Do default behavior
+				base.OnInspectorGUI();
+				return;
+			}
+
+			// Draw custom inspector
 			serializedObject.Update();
 
 			// Post help box
@@ -84,3 +146,4 @@ namespace OmiyaGames.Global.Editor
 		}
 	}
 }
+

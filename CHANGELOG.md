@@ -1,5 +1,9 @@
 # Change Log:
 
+## 1.3.0
+
+ - **New Enhancement:** allowing one to edit [`SettingsEditor`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsEditor.cs) by overriding the `UxmlPath` property.
+ 
 ## 1.2.0
 
 - **New Feature:** added abstract class, [`SettingsEditor`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsEditor.cs).  This editor simply displays one button, prompting the user to open the Project Settings window instead.

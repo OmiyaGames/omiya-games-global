@@ -42,6 +42,17 @@ namespace OmiyaGames.Global.Editor
 	/// <strong>Author:</strong> Taro Omiya
 	/// </term>
 	/// <description>Initial verison.</description>
+	/// <item></item>
+	/// <term>
+	/// <strong>Version:</strong> 1.3.0<br/>
+	/// <strong>Date:</strong> 2/19/2022<br/>
+	/// <strong>Author:</strong> Taro Omiya
+	/// </term>
+	/// <description>
+	/// Adding <seealso cref="UxmlPath"/> and
+	/// <seealso cref="CreateInspectorGUI"/> to allow
+	/// customizing this editor a little better.
+	/// </description>
 	/// </item>
 	/// </list>
 	/// </remarks>
@@ -71,8 +82,13 @@ namespace OmiyaGames.Global.Editor
 		public virtual string UxmlPath => null;
 
 		/// <summary>
-		/// The visual elmenet to display
+		/// The visual element to display
 		/// </summary>
+		/// <remarks>
+		/// Override to replace this property and/or
+		/// <seealso cref="CreateInspectorGUI"/>
+		/// to customize the editor to your liking.
+		/// </remarks>
 		protected VisualElement RootElement
 		{
 			get;

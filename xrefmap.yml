@@ -139,6 +139,19 @@ references:
   commentId: T:OmiyaGames.Global.Editor.SettingsEditor
   fullName: OmiyaGames.Global.Editor.SettingsEditor
   nameWithType: SettingsEditor
+- uid: OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI
+  name: CreateInspectorGUI()
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_CreateInspectorGUI
+  commentId: M:OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI()
+  nameWithType: SettingsEditor.CreateInspectorGUI()
+- uid: OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI*
+  name: CreateInspectorGUI
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_CreateInspectorGUI_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI
+  nameWithType: SettingsEditor.CreateInspectorGUI
 - uid: OmiyaGames.Global.Editor.SettingsEditor.HelpInfo
   name: HelpInfo
   href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_HelpInfo
@@ -158,6 +171,19 @@ references:
   isSpec: "True"
   fullName: OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI
   nameWithType: SettingsEditor.OnInspectorGUI
+- uid: OmiyaGames.Global.Editor.SettingsEditor.RootElement
+  name: RootElement
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_RootElement
+  commentId: P:OmiyaGames.Global.Editor.SettingsEditor.RootElement
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.RootElement
+  nameWithType: SettingsEditor.RootElement
+- uid: OmiyaGames.Global.Editor.SettingsEditor.RootElement*
+  name: RootElement
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_RootElement_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsEditor.RootElement
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.RootElement
+  nameWithType: SettingsEditor.RootElement
 - uid: OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
   name: SidebarDisplayPath
   href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath
@@ -171,6 +197,19 @@ references:
   isSpec: "True"
   fullName: OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath
   nameWithType: SettingsEditor.SidebarDisplayPath
+- uid: OmiyaGames.Global.Editor.SettingsEditor.UxmlPath
+  name: UxmlPath
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_UxmlPath
+  commentId: P:OmiyaGames.Global.Editor.SettingsEditor.UxmlPath
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.UxmlPath
+  nameWithType: SettingsEditor.UxmlPath
+- uid: OmiyaGames.Global.Editor.SettingsEditor.UxmlPath*
+  name: UxmlPath
+  href: api/OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_UxmlPath_
+  commentId: Overload:OmiyaGames.Global.Editor.SettingsEditor.UxmlPath
+  isSpec: "True"
+  fullName: OmiyaGames.Global.Editor.SettingsEditor.UxmlPath
+  nameWithType: SettingsEditor.UxmlPath
 - uid: OmiyaGames.Global.Editor.SettingsHelpers
   name: SettingsHelpers
   href: api/OmiyaGames.Global.Editor.SettingsHelpers.html

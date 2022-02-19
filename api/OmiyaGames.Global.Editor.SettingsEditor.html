@@ -122,7 +122,15 @@ THE SOFTWARE.
 <strong>Version:</strong> 1.2.0<br>
 <strong>Date:</strong> 2/4/2022<br>
 <strong>Author:</strong> Taro Omiya
-</td><td>Initial verison.</td></tr></tbody></table></p>
+</td><td>
+<strong>Version:</strong> 1.3.0<br>
+<strong>Date:</strong> 2/19/2022<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Initial verison.</td><td>
+Adding <a class="xref" href="OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_UxmlPath">UxmlPath</a> and
+<a class="xref" href="OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_CreateInspectorGUI">CreateInspectorGUI()</a> to allow
+customizing this editor a little better.
+</td></tr></tbody></table></p>
 </div>
   <h3 id="fields">Fields
   </h3>
@@ -154,6 +162,37 @@ THE SOFTWARE.
   </h3>
   
   
+  <a id="OmiyaGames_Global_Editor_SettingsEditor_RootElement_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.RootElement*"></a>
+  <h4 id="OmiyaGames_Global_Editor_SettingsEditor_RootElement" data-uid="OmiyaGames.Global.Editor.SettingsEditor.RootElement">RootElement</h4>
+  <div class="markdown level1 summary"><p>The visual element to display</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VisualElement RootElement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OmiyaGames_Global_Editor_SettingsEditor_RootElement_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Override to replace this property and/or
+<a class="xref" href="OmiyaGames.Global.Editor.SettingsEditor.html#OmiyaGames_Global_Editor_SettingsEditor_CreateInspectorGUI">CreateInspectorGUI()</a>
+to customize the editor to your liking.</p>
+</div>
+  
+  
   <a id="OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath*"></a>
   <h4 id="OmiyaGames_Global_Editor_SettingsEditor_SidebarDisplayPath" data-uid="OmiyaGames.Global.Editor.SettingsEditor.SidebarDisplayPath">SidebarDisplayPath</h4>
   <div class="markdown level1 summary"><p>The name this settings will appear in the
@@ -179,8 +218,60 @@ Project Setting&apos;s left-sidebar.</p>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="OmiyaGames_Global_Editor_SettingsEditor_UxmlPath_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.UxmlPath*"></a>
+  <h4 id="OmiyaGames_Global_Editor_SettingsEditor_UxmlPath" data-uid="OmiyaGames.Global.Editor.SettingsEditor.UxmlPath">UxmlPath</h4>
+  <div class="markdown level1 summary"><p>The path to the UXML file for this editor.
+Returns null if one isn&apos;t intended to be displayed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string UxmlPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="OmiyaGames_Global_Editor_SettingsEditor_CreateInspectorGUI_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI*"></a>
+  <h4 id="OmiyaGames_Global_Editor_SettingsEditor_CreateInspectorGUI" data-uid="OmiyaGames.Global.Editor.SettingsEditor.CreateInspectorGUI">CreateInspectorGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override VisualElement CreateInspectorGUI()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="OmiyaGames_Global_Editor_SettingsEditor_OnInspectorGUI_" data-uid="OmiyaGames.Global.Editor.SettingsEditor.OnInspectorGUI*"></a>

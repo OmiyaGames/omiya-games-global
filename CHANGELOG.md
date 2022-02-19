@@ -2,7 +2,7 @@
 
 ## 1.3.0
 
- - TODO
+ - **New Enhancement:** allowing one to edit [`SettingsEditor`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsEditor.cs) by overriding the `UxmlPath` property.
  
 ## 1.2.0
 

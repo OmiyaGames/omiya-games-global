@@ -3,7 +3,7 @@
   "displayName": "Omiya Games - Global",
   "version": "1.3.0",
   "unity": "2021.2",
-  "unityRelease": "10f1",
+  "unityRelease": "12f1",
   "description": "Contains scripts intended for large scope accessibility.",
   "category": "Library",
   "type": "library",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0",
-    "com.omiyagames.common": "1.2.0",
+    "com.omiyagames.common": "1.2.2",
     "com.omiyagames.web": "1.0.0"
   },
   "keywords": [

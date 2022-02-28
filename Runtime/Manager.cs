@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
-using OmiyaGames.Global;
 
-namespace OmiyaGames.Managers
+namespace OmiyaGames.Global
 {
 	///-----------------------------------------------------------------------
 	/// <remarks>

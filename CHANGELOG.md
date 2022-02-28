@@ -1,5 +1,9 @@
 # Change Log:
 
+## 1.4.1
+
+- **Bug Fix:** fix namespace and compilation error in [`Manager`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/Manager.cs).
+
 ## 1.4.0
 
 - **New Feature:** added static helper class, [`Manager`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/Manager.cs): handles starting and stopping coroutines for any non-`MonoBehaviour` scripts.  Also has events for `Update`, `LateUpdate`, and `FixedUpdate`.

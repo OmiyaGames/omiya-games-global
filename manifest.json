@@ -96,6 +96,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.Manager.EachFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.Manager.EachFrame.html",
+          "hash": "KVPWq/gpjoevg03wYpk1Vuu5uSlcx3RvJ/u0iUetaFA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.Manager.TimeArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.Manager.TimeArgs.html",
+          "hash": "UKYaDUIby2wqvlzqRFS5jDezm5NnT2gF5DmwuXG+Ft0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OmiyaGames.Global.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OmiyaGames.Global.Manager.html",
+          "hash": "cQxBjk5ei/QRk+kyc9MAw3OovRdhlgPiedUg3YYCejA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OmiyaGames.Global.Singleton.FocusChanged.yml",
       "output": {
         ".html": {
@@ -136,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OmiyaGames.Global.html",
-          "hash": "tGoQIBputgt0yaRfI5f7uOhXLE+FsJ7gTgyLebiJ98A="
+          "hash": "I7sKF1R7p7GU6Q3MK4nWDbeUZLUcmBIOwcIbB1b4Tyg="
         }
       },
       "is_incremental": false,
@@ -148,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wEnmOEJ1jqmSwnP8YWdS/vc22mIYNLgRFkUA9Adi8zI="
+          "hash": "gVtpf86vOgOiMjFP464Fa809hIcXQ525wjo4srGXsYo="
         }
       },
       "is_incremental": false,
@@ -184,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/changelog.html",
-          "hash": "8x3B5E9t7VQRHcSh0KJs/jCdhJI1I2SG8nAS53EbeOw="
+          "hash": "ILO4KWsBo0rYKNfKjJZm8MR2ZNL3YVk1R614RFLXwjA="
         }
       },
       "is_incremental": false,
@@ -246,7 +282,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace OmiyaGames.Global
+    <title>Delegate Manager.EachFrame
    | Global documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace OmiyaGames.Global
+    <meta name="title" content="Delegate Manager.EachFrame
    | Global documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,50 +78,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OmiyaGames.Global">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Global.Manager.EachFrame">
   
-  <h1 id="OmiyaGames_Global" data-uid="OmiyaGames.Global" class="text-break">Namespace OmiyaGames.Global
+  
+  <h1 id="OmiyaGames_Global_Manager_EachFrame" data-uid="OmiyaGames.Global.Manager.EachFrame" class="text-break">Delegate Manager.EachFrame
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="OmiyaGames.Global.ComponentSingleton-1.html">ComponentSingleton&lt;T&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="OmiyaGames.Global.ISingletonScript.html">ISingletonScript</a></h4>
-      <section><p>An abstract class with functions that are called on certain</p>
-<pre><code>Singleton</code></pre>&apos;s events.
-<a class="xref" href="OmiyaGames.Global.Singleton.html">Singleton</a>
-</section>
-      <h4><a class="xref" href="OmiyaGames.Global.Manager.html">Manager</a></h4>
-      <section><p>Helper manager to start coroutines and/or listen to Unity&apos;s
-update events. Useful for runtime scripts that <em>doesn&apos;t</em> extend
-<see cref="!:MonoBehaviour"></see>, e.g. <see cref="!:ScriptableObject"></see>s.
-Note that Unity events needs to be manually started by calling
-<a class="xref" href="OmiyaGames.Global.Manager.html#OmiyaGames_Global_Manager_StartEvents">StartEvents()</a> once.</p>
-</section>
-      <h4><a class="xref" href="OmiyaGames.Global.Manager.TimeArgs.html">Manager.TimeArgs</a></h4>
-      <section><p>Arguments to pass each event call.</p>
-</section>
-      <h4><a class="xref" href="OmiyaGames.Global.Singleton.html">Singleton</a></h4>
-      <section><p>Any GameObject with this script will not be destroyed when switching between
-scenes. However, only one instance of this script may exist in a scene.
-Allows retrieving any components in itself or its children.
-<a class="xref" href="OmiyaGames.Global.ISingletonScript.html">ISingletonScript</a></p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
-      <h4><a class="xref" href="OmiyaGames.Global.Singleton.GenuineStatus.html">Singleton.GenuineStatus</a></h4>
-      <section><p>Status of this build, based on <see cref="!:Application.genuine"></see> and <see cref="!:Application.genuineCheckAvailable"></see>.</p>
-</section>
-    <h3 id="delegates">Delegates
-  </h3>
-      <h4><a class="xref" href="OmiyaGames.Global.Manager.EachFrame.html">Manager.EachFrame</a></h4>
-      <section></section>
-      <h4><a class="xref" href="OmiyaGames.Global.Singleton.FocusChanged.html">Singleton.FocusChanged</a></h4>
-      <section><p>Indicates how <a class="xref" href="OmiyaGames.Global.Singleton.html#OmiyaGames_Global_Singleton_IsAppFocused">IsAppFocused</a> changes.</p>
-</section>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Global.html">OmiyaGames.Global</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_Global_Manager_EachFrame_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public delegate void EachFrame(Manager.TimeArgs args);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OmiyaGames.Global.Manager.TimeArgs.html">Manager.TimeArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

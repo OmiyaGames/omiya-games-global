@@ -1,5 +1,9 @@
 # Change Log:
 
+## 1.4.0
+
+- **New Feature:** added static helper class, [`Manager`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Runtime/Manager.cs): handles starting and stopping coroutines for any non-`MonoBehaviour` scripts.  Also has events for `Update`, `LateUpdate`, and `FixedUpdate`.
+
 ## 1.3.0
 
  - **New Enhancement:** allowing one to edit [`SettingsEditor`](https://github.com/OmiyaGames/omiya-games-global/blob/main/Editor/SettingsEditor.cs) by overriding the `UxmlPath` property.

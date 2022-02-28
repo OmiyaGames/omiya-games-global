@@ -46,16 +46,31 @@ namespace OmiyaGames.Managers
 	/// </remarks>
 	///-----------------------------------------------------------------------
 	/// <summary>
-	/// Helper manager to listen to update events, and/or start coroutines.
-	/// Useful for runtime scripts that <em>doesn't</em> extend
+	/// Helper manager to start coroutines and/or listen to Unity's
+	/// update events. Useful for runtime scripts that <em>doesn't</em> extend
 	/// <see cref="MonoBehaviour"/>, e.g. <see cref="ScriptableObject"/>s.
+	/// Note that Unity events needs to be manually started by calling
+	/// <seealso cref="StartEvents"/> once.
 	/// </summary>
-	public class Manager : MonoBehaviour
+	/// <code>
+	/// // Listen to the Update event
+	/// Manager.OnUpdate += (args) => Debug.Log($"deltaTime = {args.DeltaTimeUnscaled}");
+	/// 
+	/// // Calling StartEvents() is required for OnUpdate to trigger properly
+	/// Manager.StartEvents();
+	/// 
+	/// // Start a coroutine
+	/// Coroutine test = Manager.StartCoroutine(TestCoroutine());
+	/// 
+	/// // Stop a coroutine
+	/// Manager.StopCoroutine(test);
+	/// </code>
+	public static class Manager
 	{
 		/// <summary>
 		/// Arguments to pass each event call.
 		/// </summary>
-		public class FrameArgs : System.EventArgs
+		public class TimeArgs : System.EventArgs
 		{
 			/// <summary>
 			/// Seconds between each call, affected by
@@ -101,7 +116,7 @@ namespace OmiyaGames.Managers
 		/// <param name="source"></param>
 		/// <param name="scaledDeltaTime"></param>
 		/// <param name="unscaledDeltaTime"></param>
-		public delegate void EachFrame(Manager source, FrameArgs args);
+		public delegate void EachFrame(TimeArgs args);
 		/// <summary>
 		/// Triggers each frame.
 		/// </summary>
@@ -116,57 +131,79 @@ namespace OmiyaGames.Managers
 		/// </summary>
 		public static event EachFrame OnFixedUpdate;
 
-		readonly FrameArgs updateArgs = new(),
-			lateUpdateArgs = new(),
-			fixedUpdateArgs = new();
+		/// <summary>
+		/// Starts <seealso cref="OnUpdate"/>, <seealso cref="OnLateUpdate"/>,
+		/// and <seealso cref="OnFixedUpdate"/> if they weren't running already.
+		/// </summary>
+		public static void StartEvents() => GetInstance();
 
 		/// <summary>
-		/// Starts a coroutine. Useful runtime function if calling from a non-MonoBehavior, or a deactivated one.
+		/// Starts a coroutine. Useful runtime function if calling from a non-MonoBehavior,
+		/// or a deactivated one.
 		/// </summary>
-		/// <param name="coroutine"></param>
-		/// <returns></returns>
-		public static Coroutine Start(IEnumerator coroutine) => GetInstance().StartCoroutine(coroutine);
+		/// <param name="coroutine">
+		/// The enumerator to generate a coroutine from.
+		/// </param>
+		/// <returns>
+		/// The started coroutine.
+		/// </returns>
+		/// <seealso cref="StopCoroutine(Coroutine)"/>
+		public static Coroutine StartCoroutine(IEnumerator coroutine) => GetInstance().StartCoroutine(coroutine);
 
 		/// <summary>
-		/// 
+		/// Stops a coroutine. Useful runtime function if calling from a non-MonoBehavior,
+		/// or a deactivated one.
 		/// </summary>
-		/// <param name="coroutine"></param>
-		public static void Stop(Coroutine coroutine) => GetInstance().StopCoroutine(coroutine);
+		/// <param name="coroutine">
+		/// Coroutine to stop.
+		/// </param>
+		/// <seealso cref="StartCoroutine(IEnumerator)"/>
+		public static void StopCoroutine(Coroutine coroutine) => GetInstance().StopCoroutine(coroutine);
 
 		/// <summary>
-		/// 
+		/// Stops all coroutines running on Manager.
 		/// </summary>
-		public static void StopAll() => GetInstance().StopAllCoroutines();
+		public static void StopAllCoroutine() => GetInstance().StopAllCoroutines();
 
-		static Manager GetInstance() => ComponentSingleton<Manager>.Get(true);
+		static ManagerImpl GetInstance() => ComponentSingleton<ManagerImpl>.Get(true);
 
-		void Update()
+		/// <summary>
+		/// The implementation to trigger Unity events.
+		/// </summary>
+		class ManagerImpl : MonoBehaviour
 		{
-			CallEvent(in OnUpdate, in updateArgs);
-		}
+			readonly TimeArgs updateArgs = new(),
+				lateUpdateArgs = new(),
+				fixedUpdateArgs = new();
 
-		void LateUpdate()
-		{
-			CallEvent(in OnLateUpdate, in lateUpdateArgs);
-		}
-
-		void FixedUpdate()
-		{
-			CallEvent(in OnFixedUpdate, in fixedUpdateArgs);
-		}
-
-		void CallEvent(in EachFrame theEvent, in FrameArgs args)
-		{
-			if (theEvent != null)
+			void Update()
 			{
-				// Update args
-				args.DeltaTimeScaled = Time.deltaTime;
-				args.DeltaTimeUnscaled = Time.unscaledDeltaTime;
-				args.TimeSinceStartScaled = Time.time;
-				args.TimeSinceStartUnscaled = Time.unscaledTime;
+				CallEvent(in OnUpdate, in updateArgs);
+			}
 
-				// Call event
-				theEvent(this, fixedUpdateArgs);
+			void LateUpdate()
+			{
+				CallEvent(in OnLateUpdate, in lateUpdateArgs);
+			}
+
+			void FixedUpdate()
+			{
+				CallEvent(in OnFixedUpdate, in fixedUpdateArgs);
+			}
+
+			static void CallEvent(in EachFrame theEvent, in TimeArgs args)
+			{
+				if (theEvent != null)
+				{
+					// Update args
+					args.DeltaTimeScaled = Time.deltaTime;
+					args.DeltaTimeUnscaled = Time.unscaledDeltaTime;
+					args.TimeSinceStartScaled = Time.time;
+					args.TimeSinceStartUnscaled = Time.unscaledTime;
+
+					// Call event
+					theEvent(args);
+				}
 			}
 		}
 	}
